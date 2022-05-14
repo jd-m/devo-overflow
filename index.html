@@ -1,7 +1,28 @@
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="site.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $("button").click(function(){
+      $("#div1").load("demo-text.txt", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success")
+          alert("External content loaded successfully!");
+        if(statusTxt == "error")
+          alert("Error: " + xhr.status + ": " + xhr.statusText);
+
+        $("p").css("background-color", "yellow");
+    });
+  });
+
+});
+
+
+  </script>
+
+  
+  <link rel="stylesheet" href="site.css">
 </head>
+
 
 <div class="header col-12 test">
   <a href="./index.html">
@@ -14,7 +35,13 @@
 
   </div>
 </div>
-<div class="col-2"></div>
+<div class="col-2">
+
+  <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+  <button>Get External Content</button>
+
+</div>
 <div class="col-7 test content center">
   <h2>Posts</h2>
   <hr>
@@ -23,6 +50,7 @@
         <h4>When Your Strong City is Your Ruin</h4>
         <h5>Proverbs 10:15</h5>
         <p class="date"><i>13 May 2020</i></p>
+
         </div>
   </a>
   
@@ -35,3 +63,5 @@
   </div>
 </div>
 <div class="footer" style="test"></div>
+
+
