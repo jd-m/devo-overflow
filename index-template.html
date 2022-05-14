@@ -1,10 +1,19 @@
 <head>
-   
+  
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="jquery-3.6.0.min.js"></script>
   <script>
 
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
   </script>
+ 
   <link rel="stylesheet" href="site.css">
 </head>
 
@@ -22,16 +31,18 @@
 <div class="col-2">
 
 </div>
-<div id="posts" class="col-7 test content center">
+<div class="col-7 test content center">
   <h2>Posts</h2>
 
+  <div id="posts" class="card center"></div>
+ 
   <script>
     function makeArticleCard(file) {
-        $.get(file, function (data) {
-            $('#posts').append(
-                              "<hr>" +
-              "<a href=\"" + file + "\">" +
-              "<div class=\"card center\">" + 
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<a href=\" + file + \">" +
+                  "    <div class=\"card center\"></div>" + 
+              "<hr>" +
               "<h4>" + $(data).find("#title").html() + "</h4>" +
                   "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
                   "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
@@ -42,28 +53,11 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 2;
-       
-    function updatePosts() {
-        makeArticleCard('articles/article-000' + (pageIndex + 1) + '.html');
-        makeArticleCard('articles/article-000' + (pageIndex + 2) + '.html');
-    }
-
-    function nextPage(){
-        pageIndex = pageIndex + pageIncrement;
-        updatePosts();
-    }
-
-    function prevPage(){
-        pageIndex = pageIndex - pageIncrement;
-        updatePosts();
-    }
+    //$make_article_list$
     
-    updatePosts();   
-
+      
     </script>
-  <button id="older" onclick="nextPage()" >Older</button>
-  <button id="newer" onclick="prevPage()" >Newer</button>
+      
 </div>
 <hr class="hide">
 <div class="side col-3 test">
