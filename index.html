@@ -41,12 +41,11 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 2, numArticles = 0;
+    var pageIndex = 0, pageIncrement = 2, numArticles = 4;
 
     $.getJSON('./article-db.json',function(data) {
         
         numArticles = data.articles.length;
-        alert(numArticles);
     });
         
     function updatePosts() {
