@@ -20,7 +20,7 @@
   </div>
 </div>
 <div class="col-2">
-
+<p class="disappear">Text</p>
 </div>
 <div  class="col-7 test content center">
   <h2>Posts</h2>
@@ -35,7 +35,7 @@
               "<h4>" + $(data).find("#title").html() + "</h4>" +
                   "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
                   "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
-                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
+                  "<p class=\"hide\">" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
                   "</div>" + 
                   "</a>"
                   );
@@ -64,10 +64,20 @@
     
     updatePosts();   
 
+
+    
     </script>
+
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
   
-  <button class="pagebutton center" onclick="nextPage()" >Older... </button>
-  <button class="pagebutton center" onclick="prevPage()" >Newer... </button>
+  <button class="pagebutton " onclick="prevPage()" ><div class="arrow-left"></div>Previous</button>
+    <button class="pagebutton " style="float: right"  onclick="nextPage()" >Next<div class="arrow-right"></div></button>
   </div>
 <hr class="hide">
 <div class="side col-3 test">
@@ -77,5 +87,3 @@
     
 </div>
 <div class="footer" style="test"></div>
-
-
