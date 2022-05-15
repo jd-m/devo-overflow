@@ -24,6 +24,11 @@
 <div  class="col-7 test content center">
   <h2>Posts</h2>
   <div id="posts"></div>
+
+  <a href="#posts"><button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button></a>
+  <a href="#posts"><button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button></a>
+
+  
   <script>
     function makeArticleCard(file) {
         $.get(file, function (data) {
@@ -41,11 +46,20 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 2, numArticles = 4;
+    var pageIndex = 0, pageIncrement = 3, numArticles = 0;
 
     $.getJSON('./article-db.json',function(data) {
         
-        numArticles = data.articles.length;
+        numArticles = Math.ceil(data.articles.length/pageIncrement) * pageIncrement;
+        
+        //Initial Button State
+        if ((pageIndex + pageIncrement) >= numArticles) {
+            $('#nextButton').prop('disabled', true);
+        }
+        if ((pageIndex - pageIncrement) <= 0) {
+            $('#prevButton').prop('disabled', true);
+        }
+        
     });
         
     function updatePosts() {
@@ -66,7 +80,6 @@
             }        
         });
         
-        window.scrollTo(0,0);
     }
 
 
@@ -110,24 +123,48 @@
     }
 
     updatePosts();
+    
     </script>
- <!--   <div class="card center">
+<!--
+  <div class="card center">
     <h4>Title</h4>
     <h5>subtitle</h5>
     <p ="date">00 Month Year</p>
     <p>Content</p>
-  </div> -->
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+-->
   
-<button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
-<button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
+
 <script>
-    //Initial Button State
-    if ((pageIndex + pageIncrement) >= numArticles) {
-            $('#nextButton').prop('disabled', true);
-    }
-    if ((pageIndex - pageIncrement) <= 0) {
-            $('#prevButton').prop('disabled', true);
-    }
+
   </script>
 </div>
 <hr class="disappear">
