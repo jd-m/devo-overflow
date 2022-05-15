@@ -70,7 +70,7 @@
         window.scrollTo(0,0);
     }
 
-    
+
     
     function incPageIndex(inc) {
         let newPageIndex = Math.min(Math.max(pageIndex + inc, 0), numArticles);
@@ -81,7 +81,7 @@
         let prevPageIndex = pageIndex;
         incPageIndex(pageIncrement);
         if (prevPageIndex !== pageIndex) {
-            updatePosts();
+            //updatePosts();
         }
         
         if ((pageIndex + pageIncrement) >= numArticles) {
@@ -98,33 +98,49 @@
         let prevPageIndex = pageIndex;
         incPageIndex(pageIncrement * -1);
         if (prevPageIndex !== pageIndex) {
-            updatePosts();
+            //updatePosts();
         }
 
-        if ((pageIndex + pageIncrement) <= 0) {
+        if ((pageIndex - pageIncrement) <= 0) {
             $('#prevButton').prop('disabled', true);
         }
         
         if ($('#nextButton').prop('disabled') == true) {
-            alert("HERE");
-            $('#nextButton').prop('disabled', false)
+            $('#nextButton').prop('disabled', false);
         }
     }
-    updatePosts();
+
+
+    //updatePosts();
+
+
+    
+
+    
+    
 
     </script>
   
-<!--
+
   <div class="card center">
     <h4>Title</h4>
     <h5>subtitle</h5>
     <p ="date">00 Month Year</p>
     <p>Content</p>
   </div>
- -->
+
   
 <button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
-  <button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
+<button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
+<script>
+    //Initial Button State
+    if ((pageIndex + pageIncrement) >= numArticles) {
+            $('#nextButton').prop('disabled', true);
+    }
+    if ((pageIndex - pageIncrement) <= 0) {
+            $('#prevButton').prop('disabled', true);
+    }
+  </script>
 </div>
 <hr class="disappear">
 <div class="side col-3 test">

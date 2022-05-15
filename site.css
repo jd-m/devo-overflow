@@ -154,6 +154,16 @@ hr {
     text-decoration: underline;
 }
 
+#nextButton:disabled {
+    color: grey;
+    text-decoration: none;
+}
+
+#prevButton:disabled {
+    color: grey;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -209,9 +219,5 @@ hr {
     height: 50px;
   }
 
-  button:disabled {
-      color: grey;
-      text-decoration: none;
-  }
 
 }
