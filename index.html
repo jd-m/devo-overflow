@@ -44,8 +44,9 @@
     var pageIndex = 0, pageIncrement = 2, numArticles = 0;
 
     $.getJSON('./article-db.json',function(data) {
-
-        numArticles = data[0].articles.length - pageIncrement;
+        
+        numArticles = data.articles.length - pageIncrement;
+        
     });
         
     function updatePosts() {
@@ -53,7 +54,7 @@
         
         $.getJSON('./article-db.json',function(data) {
             var jd;
-            jd = data[0].articles;
+            jd = data.articles;
             jd.sort(function(a,b) {
                 return a - b;
             });
@@ -71,12 +72,7 @@
 
     function incPageIndex(inc) {
         let newPageIndex = Math.min(Math.max(pageIndex + inc, 0), numArticles);
-
         pageIndex = newPageIndex;
-
-        if ((pageIndex+inc) >= numArticles)
-        {
-        }
     }
     
     function nextPage(){
