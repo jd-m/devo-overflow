@@ -48,18 +48,18 @@
         $('#posts').empty();
         makeArticleCard('articles/article-000' + (pageIndex + 1) + '.html');
         makeArticleCard('articles/article-000' + (pageIndex + 2) + '.html');
+        window.scrollTo(0,0);
     }
 
     function nextPage(){
         pageIndex = pageIndex + pageIncrement;
         updatePosts();
-        $('#posts').scrollTop();
+
     }
 
     function prevPage(){
         pageIndex = pageIndex - pageIncrement;
         updatePosts();
-        $('#posts').scrollTop();
     }
     
     updatePosts();   
