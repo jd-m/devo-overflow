@@ -2,10 +2,11 @@ import os
 
 
 articles = "";
+pageIncrement = 2;
 # create the code that call the funtion that creates the cards. ITerate over directory and create a row for ach article
 for file in os.listdir('./articles'):
-    articles = articles + 'makeArticleCard(\'articles/' + file + '\');\n';
-
+    articles.append('makeArticleCard(\'articles/' + file + '\');\n';
+articles = articles[0:pageIncrement]
 print (articles)
 
 with open ('index.html', 'w') as newFile:

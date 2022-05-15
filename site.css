@@ -103,9 +103,24 @@ hr {
 
 }
 
+/*Buttons*/
+.pagebutton {
+    display: block;
+    background-color: white;
+    color: darkcyan;
+    width: 45%;
+}
+
+
+/**/
+
 .side {
-    border-left: 1px solid darkcyan;
+
     height: 100%;
+}
+
+.side p {
+    padding: 0px 40px;
 }
 
 .article.content {
@@ -156,6 +171,7 @@ hr {
   }
 
   .side {
+      border-left: 1px solid darkcyan;
       padding-right: 5%;
       padding-left: 5%;
   }

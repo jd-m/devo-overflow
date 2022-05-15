@@ -22,9 +22,9 @@
 <div class="col-2">
 
 </div>
-<div id="posts" class="col-7 test content center">
+<div  class="col-7 test content center">
   <h2>Posts</h2>
-
+  <div id="posts">something</div>
   <script>
     function makeArticleCard(file) {
         $.get(file, function (data) {
@@ -45,6 +45,7 @@
     var pageIndex = 0, pageIncrement = 2;
        
     function updatePosts() {
+        $('#posts').empty();
         makeArticleCard('articles/article-000' + (pageIndex + 1) + '.html');
         makeArticleCard('articles/article-000' + (pageIndex + 2) + '.html');
     }
@@ -62,15 +63,16 @@
     updatePosts();   
 
     </script>
-  <button id="older" onclick="nextPage()" >Older</button>
-  <button id="newer" onclick="prevPage()" >Newer</button>
-</div>
+  
+  <button class="pagebutton center" onclick="nextPage()" >Older... </button>
+  <button class="pagebutton center" onclick="prevPage()" >Newer... </button>
+  </div>
 <hr class="hide">
 <div class="side col-3 test">
-  <div>
-    <h2>About</h2>
-    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
-  </div>
+  
+  <h2>About</h2>
+  <p> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</p>
+    
 </div>
 <div class="footer" style="test"></div>
 
