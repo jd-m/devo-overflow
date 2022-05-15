@@ -53,11 +53,13 @@
     function nextPage(){
         pageIndex = pageIndex + pageIncrement;
         updatePosts();
+        $('#posts').scrollTop();
     }
 
     function prevPage(){
         pageIndex = pageIndex - pageIncrement;
         updatePosts();
+        $('#posts').scrollTop();
     }
     
     updatePosts();   
