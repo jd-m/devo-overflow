@@ -45,8 +45,8 @@
 
     $.getJSON('./article-db.json',function(data) {
         
-        numArticles = data.articles.length - pageIncrement;
-        
+        numArticles = data.articles.length;
+        alert(numArticles);
     });
         
     function updatePosts() {
