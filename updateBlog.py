@@ -1,16 +1,15 @@
 import os
+import json
 
 
-articles = "";
-pageIncrement = 2;
-# create the code that call the funtion that creates the cards. ITerate over directory and create a row for ach article
+articleData = {"articles" : []};
+ID = 0;
+
 for file in os.listdir('./articles'):
-    articles.append('makeArticleCard(\'articles/' + file + '\');\n';
-articles = articles[0:pageIncrement]
-print (articles)
+    articleData["articles"].append({"ID" : ID, "file" : file})
+    ID = ID + 1;
 
-with open ('index.html', 'w') as newFile:
-    with open('index-template.html') as f:
-        updated = f.read().replace("//$make_article_list$", articles);
-        print (updated)
-        newFile.write(updated)
+print (articleData)
+
+with open('article-db.json', 'w') as f:
+    json.dump(articleData, f)

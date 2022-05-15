@@ -41,31 +41,57 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 2;
+    var pageIndex = 0, pageIncrement = 2, numArticles = 0;
 
+    $.getJSON('./article-db.json',function(data) {
+
+        numArticles = data[0].articles.length - pageIncrement;
+    });
+        
     function updatePosts() {
         $('#posts').empty();
-        for (let i=0; i < pageIncrement; i++) {
-            makeArticleCard('articles/article-' + ("0000" + (pageIndex + i+1)).substr(-4,4) + '.html');
-        }
-
+        
+        $.getJSON('./article-db.json',function(data) {
+            var jd;
+            jd = data[0].articles;
+            jd.sort(function(a,b) {
+                return a - b;
+            });
+                        
+            for (let i = 0; i < pageIncrement; i++){
+                let articleFile = jd[pageIndex + i].file;
+                if (articleFile !== undefined) {
+                    makeArticleCard('articles/' + articleFile);
+                }
+            }        
+        });
+        
         window.scrollTo(0,0);
     }
 
+    function incPageIndex(inc) {
+        let newPageIndex = Math.min(Math.max(pageIndex + inc, 0), numArticles);
+
+        pageIndex = newPageIndex;
+
+        if ((pageIndex+inc) >= numArticles)
+        {
+        }
+    }
+    
     function nextPage(){
-        pageIndex = pageIndex + pageIncrement;
+        incPageIndex(pageIncrement);
         updatePosts();
     }
 
     function prevPage(){
-        pageIndex = pageIndex - pageIncrement;
+        incPageIndex(pageIncrement * -1);
         updatePosts();
     }
-    
     updatePosts();
-    
-    </script>
 
+    </script>
+  
 <!--
   <div class="card center">
     <h4>Title</h4>
@@ -75,8 +101,8 @@
   </div>
  -->
   
-  <button class="pagebutton " onclick="prevPage()" >Previous</button>
-  <button class="pagebutton " style="float: right"  onclick="nextPage()" >Next</button>
+<button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
+  <button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
 </div>
 <hr class="disappear">
 <div class="side col-3 test">

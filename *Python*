@@ -1,0 +1,783 @@
+Python 3.9.6 (default, Jul 29 2021, 12:13:19) 
+[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> python.el: native completion setup loaded
+>>> ['<head>\n', '  \n', '  \n', '  <meta name="viewport" content="width=device-width, initial-scale=1">\n', '  <script src="jquery-3.6.0.min.js"></script>\n', '  <script>\n', '\n', '    $(document).ready(function(){\n', '        $.get("article.html", function(data) {\n', '/*            $(".card").append($(data).find(\'p\').text().substring(0,200) + "..."); */\n', '        });\n', '      });\n', '\n', '\n', '  </script>\n', ' \n', '  <link rel="stylesheet" href="site.css">\n', '</head>\n', '\n', '<div class="header col-12 test">\n', '  <a href="./index.html">\n', '  <h1 class="center">Devo_Overflow</h1>\n', '  <div class="triple-line">\n', '    <hr style="margin-left:40%; margin-right:40%;">\n', '    <hr style="margin-left:45%; margin-right:45%;">\n', '    <hr style="margin-left:48%; margin-right:48%;">\n', '    </a>\n', '\n', '  </div>\n', '</div>\n', '<div class="col-2">\n', '\n', '</div>\n', '<div class="col-7 test content center">\n', '  <h2>Posts</h2>\n', '\n', '  <a href="article.html">\n', '    <div id="posts" class="card center"></div>\n', '  </a>\n', '  <script>\n', '    function makeArticleCard(file) {\n', '      $.get(file, function (data) {\n', "          $('#posts').append(\n", '              "<hr>" +\n', '              "<h4>" + $(data).find("#title").html() + "</h4>" +\n', '                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +\n', '                  "<p class=\\"date\\"><i>" + $(data).find("#date").html() + "</i></p>" +\n', '                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"\n', '                  );\n', '      });  \n', '    }\n', '\n', "    makeArticleCard('articles/article-0001.html');\n", '      \n', '    </script>\n', '      \n', '</div>\n', '<hr class="hide">\n', '<div class="side col-3 test">\n', '  <div>\n', '    <h2>About</h2>\n', '    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>\n', '  </div>\n', '</div>\n', '<div class="footer" style="test"></div>\n', '\n', '\n']
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 17
+    # print (contents)
+                      ^
+IndentationError: expected an indented block
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 11
+    continue
+    ^
+SyntaxError: 'continue' not properly in loop
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 8, in <module>
+    print(os.path.join(directory, filename))
+NameError: name 'directory' is not defined
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 8, in <module>
+    print(os.path.join(articleDir, filename))
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/posixpath.py", line 90, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/genericpath.py", line 155, in _check_arg_types
+    raise TypeError("Can't mix strings and bytes in path components") from None
+TypeError: Can't mix strings and bytes in path components
+>>> b'article-0001.html'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 11, in <module>
+    newFile = nil;
+NameError: name 'nil' is not defined
+>>> article-0001.html
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 10, in <module>
+    newFile = nil;
+NameError: name 'nil' is not defined
+>>> article-0001.html
+>>> article-0001.html
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 7, in <module>
+    article.append(file);
+NameError: name 'article' is not defined
+>>> ['article-0001.html']
+>>> <head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    //make_article_list
+    makeArticleCard('articles/article-0001.html');
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 13, in <module>
+    newFile.replace("//make_article_list", TEST)
+NameError: name 'TEST' is not defined
+>>> <head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    //make_article_list
+    makeArticleCard('articles/article-0001.html');
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> <head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    TEST
+    makeArticleCard('articles/article-0001.html');
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 7
+    articles = articles + ''makeArticleCard('articles/' + file + ');';
+                            ^
+SyntaxError: invalid syntax
+>>> makeArticleCard('articles/article-0001.html');
+>>> makeArticleCard('articles/article-0002.html');makeArticleCard('articles/article-0001.html');
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+<head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+    makeArticleCard('articles/article-0001.html');
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 11, in <module>
+    with open ('./index-new.html', w) as newFile:
+NameError: name 'w' is not defined
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 11, in <module>
+    with open ('index-new.html', w) as newFile:
+NameError: name 'w' is not defined
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 11, in <module>
+    with open ('index-new.html', w) as newFile:
+NameError: name 'w' is not defined
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+<head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+    makeArticleCard('articles/article-0001.html');
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+<head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <a href="article.html">
+    <div id="posts" class="card center"></div>
+  </a>
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>"
+                  );
+      });  
+    }
+
+    makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+    
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+<head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+        $.get("article.html", function(data) {
+/*            $(".card").append($(data).find('p').text().substring(0,200) + "..."); */
+        });
+      });
+
+
+  </script>
+ 
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div class="col-7 test content center">
+  <h2>Posts</h2>
+
+  <div id="posts" class="card center"></div>
+ 
+  <script>
+    function makeArticleCard(file) {
+      $.get(file, function (data) {
+          $('#posts').append(
+              "<a href=\" + file + \">" +
+                  "    <div class=\"card center\"></div>" + 
+              "<hr>" +
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
+                  "</div>" + 
+                  "</a>"
+                  );
+      });  
+    }
+
+    makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+    
+      
+    </script>
+      
+</div>
+<hr class="hide">
+<div class="side col-3 test">
+  <div>
+    <h2>About</h2>
+    <div> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</div>
+  </div>
+</div>
+<div class="footer" style="test"></div>
+
+
+
+>>> makeArticleCard('articles/article-0004.html');
+makeArticleCard('articles/article-0003.html');
+makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+<head>
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+
+  </script>
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<div class="header col-12 test">
+  <a href="./index.html">
+  <h1 class="center">Devo_Overflow</h1>
+  <div class="triple-line">
+    <hr style="margin-left:40%; margin-right:40%;">
+    <hr style="margin-left:45%; margin-right:45%;">
+    <hr style="margin-left:48%; margin-right:48%;">
+    </a>
+
+  </div>
+</div>
+<div class="col-2">
+
+</div>
+<div  class="col-7 test content center">
+  <h2>Posts</h2>
+  <div id="posts">something</div>
+  <script>
+    function makeArticleCard(file) {
+        $.get(file, function (data) {
+            $('#posts').append(
+                              "<hr>" +
+              "<a href=\"" + file + "\">" +
+              "<div class=\"card center\">" + 
+              "<h4>" + $(data).find("#title").html() + "</h4>" +
+                  "<h5>" + $(data).find("#subtitle").html() + "</h5>" +
+                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
+                  "<p>" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
+                  "</div>" + 
+                  "</a>"
+                  );
+      });  
+    }
+
+    var pageIndex = 0, pageIncrement = 2;
+       
+    function updatePosts() {
+        $('#posts').empty();
+        makeArticleCard('articles/article-0004.html');
+makeArticleCard('articles/article-0003.html');
+makeArticleCard('articles/article-0002.html');
+makeArticleCard('articles/article-0001.html');
+
+    }
+
+    function nextPage(){
+        pageIndex = pageIndex + pageIncrement;
+        updatePosts();
+    }
+
+    function prevPage(){
+        pageIndex = pageIndex - pageIncrement;
+        updatePosts();
+    }
+    
+    updatePosts();   
+
+    </script>
+  
+  <button class="pagebutton center" onclick="nextPage()" >Older... </button>
+  <button class="pagebutton center" onclick="prevPage()" >Newer... </button>
+  </div>
+<hr class="hide">
+<div class="side col-3 test">
+  
+  <h2>About</h2>
+  <p> This blog is a place for some of my reflections on my my scripture, my faith, and how they inform life.</p>
+    
+</div>
+<div class="footer" style="test"></div>
+
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 9, in <module>
+    articles = articles[pageIncrement * (-1), 0]
+TypeError: string indices must be integers
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 9, in <module>
+    articles = articles[pageIncrement * (-1), 0]
+TypeError: list indices must be integers or slices, not tuple
+>>> ["makeArticleCard('articles/article-0004.html');\n", "makeArticleCard('articles/article-0003.html');\n", "makeArticleCard('articles/article-0002.html');\n", "makeArticleCard('articles/article-0001.html');\n"]
+>>> []
+>>> []
+>>> ["makeArticleCard('articles/article-0004.html');\n"]
+>>> ["makeArticleCard('articles/article-0004.html');\n", "makeArticleCard('articles/article-0003.html');\n"]
+>>> article-0004.html
+article-0003.html
+article-0002.html
+article-0001.html
+>>> article-0004.html
+article-0003.html
+article-0002.html
+article-0001.html
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 9, in <module>
+    articleData.append({"ID" : ID, "file" : title});
+NameError: name 'title' is not defined
+>>> [{'ID': 0, 'file': 'article-0004.html'}, {'ID': 1, 'file': 'article-0003.html'}, {'ID': 2, 'file': 'article-0002.html'}, {'ID': 3, 'file': 'article-0001.html'}]
+>>> {'ID': 'article-0001.html'}
+>>> {'ID': 'article-0001.html'}
+>>> 1
+{'ID': 'article-0004.html'}
+2
+{'ID': 'article-0003.html'}
+3
+{'ID': 'article-0002.html'}
+4
+{'ID': 'article-0001.html'}
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 9, in <module>
+    articleData[ID.asString()] = file;
+AttributeError: 'int' object has no attribute 'asString'
+>>> {'0': 'article-0004.html', '1': 'article-0003.html', '2': 'article-0002.html', '3': 'article-0001.html'}
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 9, in <module>
+    articleData[str(ID.zfill(4))] = file;
+AttributeError: 'int' object has no attribute 'zfill'
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 14, in <module>
+    with open('article-db.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'article-db.json'
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 14, in <module>
+    with open('article-db.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'article-db.json'
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 15, in <module>
+    f.write(articleData, f)
+TypeError: TextIOWrapper.write() takes exactly one argument (2 given)
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 15, in <module>
+    f.write(articleData)
+TypeError: write() argument must be str, not dict
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 15, in <module>
+    f.write(json.dump(articleData))
+TypeError: dump() missing 1 required positional argument: 'fp'
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 5
+    articleData = ["articles" : {}];
+                              ^
+SyntaxError: invalid syntax
+>>> {'articles': {'ID': ['0003'], 'file': 'article-0001.html'}}
+>>> {'articles': {'ID': ['0003'], 'file': 'article-0001.html'}}
+>>> {'articles': [{'ID': ['0000'], 'file': 'article-0004.html'}, {'ID': ['0001'], 'file': 'article-0003.html'}, {'ID': ['0002'], 'file': 'article-0002.html'}, {'ID': ['0003'], 'file': 'article-0001.html'}]}
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/jdm/jd-m.github.io/updateBlog.py", line 15, in <module>
+    
+TypeError: dump() missing 1 required positional argument: 'fp'
+>>> {'0000': 'article-0004.html', '0001': 'article-0003.html', '0002': 'article-0002.html', '0003': 'article-0001.html'}
+>>> [{'ID': '0000', 'file': 'article-0004.html'}, {'ID': '0001', 'file': 'article-0003.html'}, {'ID': '0002', 'file': 'article-0002.html'}, {'ID': '0003', 'file': 'article-0001.html'}]
+>>> 
