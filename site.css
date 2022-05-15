@@ -209,4 +209,9 @@ hr {
     height: 50px;
   }
 
+  button:disabled {
+      color: grey;
+      text-decoration: none;
+  }
+
 }

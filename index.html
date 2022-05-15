@@ -70,19 +70,45 @@
         window.scrollTo(0,0);
     }
 
+    
+    
     function incPageIndex(inc) {
         let newPageIndex = Math.min(Math.max(pageIndex + inc, 0), numArticles);
         pageIndex = newPageIndex;
     }
     
     function nextPage(){
+        let prevPageIndex = pageIndex;
         incPageIndex(pageIncrement);
-        updatePosts();
+        if (prevPageIndex !== pageIndex) {
+            updatePosts();
+        }
+        
+        if ((pageIndex + pageIncrement) >= numArticles) {
+            $('#nextButton').prop('disabled', true);
+        }
+            
+        if ($('#prevButton').prop('disabled') == true) {
+            $('#prevButton').prop('disabled', false)
+        }
+            
     }
 
     function prevPage(){
+        let prevPageIndex = pageIndex;
         incPageIndex(pageIncrement * -1);
-        updatePosts();
+        if (prevPageIndex !== pageIndex) {
+            updatePosts();
+        }
+
+        if ((pageIndex + pageIncrement) <= 0) {
+            $('#prevButton').prop('disabled', true);
+        }
+        
+        if ($('#nextButton').prop('disabled') == true) {
+            alert("HERE");
+            $('#nextButton').prop('disabled', false)
+        }
     }
     updatePosts();
 
