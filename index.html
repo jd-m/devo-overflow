@@ -24,9 +24,45 @@
 <div  class="col-7 test content center">
   <h2>Posts</h2>
   <div id="posts"></div>
+<!--
+    <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
 
-  <a href="#posts"><button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button></a>
-  <a href="#posts"><button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button></a>
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+
+  <div class="card center">
+    <h4>Title</h4>
+    <h5>subtitle</h5>
+    <p ="date">00 Month Year</p>
+    <p>Content</p>
+  </div>
+  -->
+  
+<button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
+<button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
 
   
   <script>
@@ -46,7 +82,7 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 3, numArticles = 0;
+    var pageIndex = 0, pageIncrement = 3, numArticles = 6;
 
     $.getJSON('./article-db.json',function(data) {
         
@@ -77,8 +113,10 @@
                 if (articleFile !== undefined) {
                     makeArticleCard('articles/' + articleFile);
                 }
-            }        
+            }    
         });
+        
+        document.getElementById("posts").scrollIntoView(true);
         
     }
 
@@ -125,43 +163,7 @@
     updatePosts();
     
     </script>
-<!--
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
 
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
--->
-  
 
 <script>
 
