@@ -155,15 +155,17 @@ hr {
 }
 
 #nextButton:disabled {
-    display: none;
+    
     color: grey;
     text-decoration: none;
+    visibility: hidden;
 }
 
 #prevButton:disabled {
-    display: none;
+    
     color: grey;
     text-decoration: none;
+    visibility: hidden;
 }
 
 @media only screen and (min-width: 768px) {
