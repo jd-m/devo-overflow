@@ -92,9 +92,11 @@ h5 {
 }
 
 .card h4 {
-    color: darkcyan;
+    color: black;
     font-size: 20px;
 }
+
+.card h4:hover {color:darkcyan}
 
 hr {
 
@@ -117,6 +119,8 @@ hr {
     height: auto;
 }
 
+
+
 .article.content {
     padding-right: 5%;
     padding-left: 5%;
@@ -133,6 +137,9 @@ hr {
     margin-left: auto;
     margin-right: auto; 
 }
+
+
+
 
 .disappear {
     display: none;
@@ -168,6 +175,18 @@ hr {
     visibility: hidden;
 }
 
+/*Tag links*/
+
+.blogTags > a {
+    font-family: Courier;
+}
+
+
+.blogTags > a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -201,8 +220,7 @@ hr {
 
   .side {
       border-left: 1px solid darkcyan;
-      padding-right: 5%;
-      padding-left: 5%;
+
   }
 
 
@@ -223,5 +241,13 @@ hr {
     height: 50px;
   }
 
+  li {
+      font-family: Courier;
+  }
+  
+  li:hover {
+      color: darkcyan;
+      font-family: Courier;
+  }
 
 }

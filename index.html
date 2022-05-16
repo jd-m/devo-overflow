@@ -1,5 +1,5 @@
 <head>
-   
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="jquery-3.6.0.min.js"></script>
   <script>
@@ -20,7 +20,9 @@
 
   </div>
 </div>
-<div class="col-2">
+<div class="col-2 disappear">
+  <h3>Tags</h3>
+  <ul id="taglist" ></ul>
 </div>
 <div  class="col-7 test content center">
   <h2>Posts</h2>
@@ -79,8 +81,8 @@
                   "<p class=\"disappear\">" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
                   "</div>" + 
                   "</a>"
-                  );
-      });  
+            );
+        });      
     }
 
     var pageIndex = 0, pageIncrement = 3, numArticles = 4;
@@ -158,14 +160,23 @@
             $('#nextButton').prop('disabled', false);
         }
     }
+
+    $.getJSON('article-db.json',function(data) {
+        $.each(data.taglist, function(key, value){
+            $('#taglist').append("<a href=\"tags.html#"+value+ "\"><li>" + value + "</li></a>")
+        })
+        
+    });
+    
+        
     updatePosts();
     </script>
 </div>
 <hr class="disappear">
-<div class="side col-3 test">
+<div class="side content col-3 test">
   
   <h2>About</h2>
-  <p> This blog is a place for some reflections on scripture, my faith, and how they inform life.</p>
+  <p> This blog contains some thoughts on the bible, the Christian faith, and some reflections on living it out practically.</p>
     
 </div>
 <div class="footer" style="test"></div>

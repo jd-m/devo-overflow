@@ -1,7 +1,10 @@
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../jquery-3.6.0.min.js"></script>
+  <meta name="date" content="2022-01-01">
+  <meta name="tags" content="blog devo proverbs">
+  
    <link rel="stylesheet" href="../site.css">
-   <date></date>
 </head>
 
 <div class="header col-12 test">
@@ -16,11 +19,14 @@
 </div>
 <div class="col-3"></div>
 <div class="col-6 test article content center">
-  <h2 class="center" id="title">Article 1: If Your Strong City is Not God It Will Be Your Ruin</h2>
-  
+  <h2 class="center" id="title">If Your Strong City is Not God It Will Be Your Ruin</h2>
+
   <h5 id="date">2nd May 2022</h5>
   <img id="img" src="../img/bg-2.jpg">
-
+  
+  <script>
+    
+  </script>
   <h3 id="subtitle">Proverbs 10:15</h3>
   <blockquote>
     A rich man's wealth is his strong city;<br>
@@ -45,7 +51,17 @@
     When we lose confidence and feel shaken when things are going well, this is a sign we are trusting in what we have instead of trusting in God.
     There are many things we may be tempted to trust in instead of God: wealth, ability, approval and recognition of people.
     Trust God.
-</p>
+  </p>
+  <hr>
+  <div id="blogTags" class="blogTags"></div>
+  <script>
+    let tagArr = $('meta[name="tags"]').attr("content").split(" ");
+    let tagString = "";
+    $.each(tagArr, function(i, tag) {
+        tagString = tagString + "<a href=\"../tags.html#"+tag+"\"> #"  + tag + "</a>   "
+    });
+    $('#blogTags').append(tagString);
+  </script>
 </div>
 <div class="footer" style="test"></div>
 
