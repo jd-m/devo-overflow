@@ -82,7 +82,7 @@
       });  
     }
 
-    var pageIndex = 0, pageIncrement = 3, numArticles = 6;
+    var pageIndex = 0, pageIncrement = 3, numArticles = 4;
 
     $.getJSON('./article-db.json',function(data) {
         
@@ -99,7 +99,7 @@
     });
         
     function updatePosts() {
-        $('#posts').empty();
+        
         
         $.getJSON('./article-db.json',function(data) {
             var jd;
@@ -107,20 +107,18 @@
             jd.sort(function(a,b) {
                 return a - b;
             });
-                        
+            
+            $('#posts').empty();
             for (let i = 0; i < pageIncrement; i++){
                 let articleFile = jd[pageIndex + i].file;
                 if (articleFile !== undefined) {
                     makeArticleCard('articles/' + articleFile);
                 }
-            }    
+            }
+            $("#posts").scrollIntoView(false);
+                       
         });
-        
-        document.getElementById("posts").scrollIntoView(true);
-        
     }
-
-
     
     function incPageIndex(inc) {
         let newPageIndex = Math.min(Math.max(pageIndex + inc, 0), numArticles);
@@ -159,15 +157,8 @@
             $('#nextButton').prop('disabled', false);
         }
     }
-
     updatePosts();
-    
     </script>
-
-
-<script>
-
-  </script>
 </div>
 <hr class="disappear">
 <div class="side col-3 test">
