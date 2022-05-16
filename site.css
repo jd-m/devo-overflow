@@ -155,11 +155,13 @@ hr {
 }
 
 #nextButton:disabled {
+    display: none;
     color: grey;
     text-decoration: none;
 }
 
 #prevButton:disabled {
+    display: none;
     color: grey;
     text-decoration: none;
 }
