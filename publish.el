@@ -7,7 +7,7 @@
 	 :base-extension "org"
 	 :publishing-directory "~/jd-m.github.io/articles/"
 	 :recursive nil
-	 :publishing-function ox-slimhtml-publish-to-html
+	 :publishing-function devo-html-publish-to-html
 	 :headline-levels 4
 	 :with-toc nil
 	 :html-head   "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
@@ -25,7 +25,6 @@
 	 :publishing-function org-publish-attachment
 
 	 )
-
 
 	("posts" :components ("posts" "static"))
 	))
