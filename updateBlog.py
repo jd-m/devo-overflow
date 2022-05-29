@@ -2,23 +2,26 @@ import os
 import json
 from bs4 import BeautifulSoup 
 
-articleData = {"articles" : [], "taglist" : []};
-ID = 0;
+articleData = {"posts" : [], "taglist" : []};
 
-for filePath in os.listdir('./articles'):
-    row = {"ID" : ID, "file" : filePath};
-    with open('./articles/' + filePath) as file:
-        soup = BeautifulSoup(file.read(),'html.parser');
-        row["date"] = soup.find("meta", attrs={"name":"date"})["content"];
-        row["tags"] = soup.find("meta", attrs={"name":"tags"})["content"].split(" ");
+for filePath in os.listdir('./posts-html/'):
+    if not filePath.startswith('.'):
+        ID = os.path.splitext(filePath)[0]
+        row = {"ID" : ID,
+               "file" : filePath,
+               "date": "",
+               "tags": ""};
+        with open('./posts-html/' + filePath) as file:
+            soup = BeautifulSoup(file.read(),'html.parser');
 
-    for t in row["tags"]:
-        if t not in articleData["taglist"]:
-            articleData["taglist"].append(t);
+            row["date"] = soup.find("meta", attrs={"name":"date"})["content"];
+            row["tags"] = soup.find("meta", attrs={"name":"tags"})["content"].split(" ");
+
+            for t in row["tags"]:
+                if t not in articleData["taglist"]:
+                    articleData["taglist"].append(t);
         
-    articleData["articles"].append(row)
-    ID = ID + 1;
+        articleData["posts"].append(row)
 
-print (articleData)
 with open('article-db.json', 'w') as f:
-   json.dump(articleData, f)
+    json.dump(articleData, f)

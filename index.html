@@ -5,11 +5,11 @@
   <script>
 
   </script>
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <div class="header col-12 test">
-  <a href="./index.html">
+  <a href="index.html">
   <h1 class="center">Devo_Overflow</h1>
      </a>
   <div class="triple-line">
@@ -20,53 +20,18 @@
 
   </div>
 </div>
-<div class="col-2 disappear">
+<div class="col-3 disappear side">
+  
   <a href="tags.html"><h3>Tags</h3></a>
   <ul id="taglist" ></ul>
-  <a href="date.html"><h3>Date</h3></a>
+  <!--<a href="date.html"><h3>Date</h3></a>-->
 </div>
-<div  class="col-7 test content center">
+<div  class="col-6 test content center">
   <h2>Posts</h2>
   <div id="posts"></div>
-<!--
-    <div class="card center">
-    <h4>Title</h4>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-
-  <div class="card center">
-    <h4>Title</h4>
-    <h5>subtitle</h5>
-    <p ="date">00 Month Year</p>
-    <p>Content</p>
-  </div>
-  -->
   
-<button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
-<button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
-
+  <button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
+  <button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
   
   <script>
     function makeArticleCard(file) {
@@ -87,9 +52,9 @@
 
     var pageIndex = 0, pageIncrement = 3, numArticles = 4;
 
-    $.getJSON('./article-db.json',function(data) {
-        
-        numArticles = Math.ceil(data.articles.length/pageIncrement) * pageIncrement;
+    $.getJSON('article-db.json',function(data) {
+
+        numArticles = Math.ceil(data.posts.length/pageIncrement) * pageIncrement;
         
         //Initial Button State
         if ((pageIndex + pageIncrement) >= numArticles) {
@@ -104,9 +69,9 @@
     function updatePosts() {
         
         
-        $.getJSON('./article-db.json',function(data) {
+        $.getJSON('article-db.json',function(data) {
             var jd;
-            jd = data.articles;
+            jd = data.posts;
             jd.sort(function(a,b) {
                 return a - b;
             });
@@ -115,7 +80,8 @@
             for (let i = 0; i < pageIncrement; i++){
                 let articleFile = jd[pageIndex + i].file;
                 if (articleFile !== undefined) {
-                    makeArticleCard('articles/' + articleFile);
+                    makeArticleCard('posts-html/' + articleFile);
+                    
                 }
             }
             $("#posts").scrollIntoView(false);
@@ -168,12 +134,12 @@
         
     });
     
-        
+    
     updatePosts();
     </script>
 </div>
-<hr class="disappear">
-<div class="side content col-3 test">
+<!-- <hr class="appear"> -->
+<div class="side disappear col-3 test">
   
   <h2>About</h2>
   <p> This blog contains some thoughts on the bible, the Christian faith, and some reflections on living it out practically.</p>

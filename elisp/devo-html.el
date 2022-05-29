@@ -1,4 +1,4 @@
-(org-export-define-derived-backend 'devo-html 'slimhtml
+(org-export-define-derived-backend 'devo-html 'html
   :translate-alist '((template . devo-html-template)))
 
 
@@ -19,7 +19,7 @@
 		 
 		 (match-string-no-properties 1 string))))
    
-   "<link rel=\"stylesheet\" href=\"../site.css\">\n"
+   "<link rel=\"stylesheet\" href=\"../css/site.css\">\n"
    "</head>\n"
 
   "<div class=\"header col-12 test\">"
@@ -32,14 +32,11 @@
   "</div>"
   "</a>"
   "</div>"
-  "<div class=\"col-3\"></div>"
+  "<div class=\"col-3 side\"></div>"
   "<div class=\"col-6 test article content center\">"
   (format "<h1 class=\"center\" id=\"title\">%s</h1" (car (plist-get info :title)))
   (format "<meta name=\"date\" content=\"%s\">\n" (format-time-string "%F"))
-  (format "<h5 id=\"date\">%s</h5>" (format-time-string "%d %b %Y"))
-  
-   )
-  )
+  (format "<h5 id=\"date\">%s</h5>" (format-time-string "%d %b %Y"))))
 
 
 (defun devo-html-footer (info)

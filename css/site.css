@@ -77,7 +77,6 @@ h5 {
 /* Content */
 
 .content {
-    
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -116,7 +115,9 @@ hr {
 /**/
 
 .side {
-    height: auto;
+    height: 100%;
+    float: left;
+    padding: 0px 40px;
 }
 
 
@@ -139,11 +140,13 @@ hr {
 }
 
 
-
-
 .disappear {
     display: none;
 }
+
+  .appear {
+      display: block;
+  }
 
 .pagebutton {
     float: left;
@@ -214,15 +217,19 @@ hr {
   }
   
   .content {
-      padding-right: 10%;
+      float: left;
   }
 
 
   .side {
-      border-left: 1px solid darkcyan;
-
+      
+      padding: 0px 40px;
   }
 
+  .side-border {
+      border-left: 1px solid darkcyan;
+      border-right: 1px solid darkcyan;
+  }
 
   .article img {
     width: 100%;
@@ -235,6 +242,10 @@ hr {
       display: block;
   }
 
+  .appear {
+      display: none;
+  }
+  
   .pagebutton {
     float: left;
     width: 40%;
