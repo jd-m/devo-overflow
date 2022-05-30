@@ -32,19 +32,17 @@
   
   <button id="prevButton" class="pagebutton" onclick="prevPage()" >Previous</button>
   <button id="nextButton" class="pagebutton" style="float: right"  onclick="nextPage()" >Next</button>
-  
+
   <script>
     function makeArticleCard(file) {
         $.get(file, function (data) {
             $('#posts').append(
-                              "<hr>" +
-              "<a href=\"" + file + "\">" +
-              "<div class=\"card center\">" + 
-              "<h4 style=\"\">" + $(data).find("#title").html() + "</h4>" +
-                  /*"<h5 class=\"disappear\">" + $(data).find("#subtitle").html() + "</h5>" +*/
-                  "<p class=\"date\"><i>" + $(data).find("#date").html() + "</i></p>" +
-                  "<p class=\"disappear\">" + $(data).find("p").text().substring(0,200) + "..." + "</p>" +
-                  "</div>" + 
+
+                    "<a href=\"" + file + "\">" +
+                    "<div class=\"card center\">" + 
+                    "<h4><span class=\"date\">"+$(data).find("#date").html()+"</span><span>"+$(data).find("#title").html()+"</span></h4>" +
+                    "<p class=\"disappear\">" + $(data).find("p").text().substring(0,150) + "..." + "</p>" +
+                    "</div>" + 
                   "</a>"
             );
         });      

@@ -86,15 +86,29 @@ h5 {
 .card {
     height: auto;
     width: 100%;
-    padding-top: 0 px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 20px 0px;
 
 }
 
 .card h4 {
-    color: black;
+    background-color: white;
     font-size: 20px;
+    margin: 0px;
+}
+
+.card .date {
+    color: darkcyan;
+    margin: 0px 20px 0px 0px;
+
+}
+
+.card p {
+    margin: 0px;
+        background-color: white;
 }
 
 .card h4:hover {color:darkcyan}

@@ -5,8 +5,7 @@
 [[../img/bg-2.jpg]]
 
 #+begin_quote
-Proverbs 10:15
-A rich man's wealth is his strong city;<br>
+Proverbs 10:15 A rich man's wealth is his strong city;<br>
 the poverty of the poor is their ruin. 
 #+end_quote
 
