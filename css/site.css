@@ -32,6 +32,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
+  color: #212427;
 }
 
 a, a:visited {
@@ -41,7 +42,8 @@ a, a:visited {
 }
 
 h1, h2, h3, h4 {
-    font-family: Courier;    
+    font-family: Courier;
+    color: #212427;
 }
 
 h4 {
