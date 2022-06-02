@@ -11,7 +11,7 @@
    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
    
    "<script src=\"../jquery-3.6.0.min.js\"></script>\n"
-   (format "<meta name=\"date\" content=\"%s\">\n" (format-time-string "%F"))
+   (format "<meta name=\"date\" content=\"%s\">\n" (plist-get info :date))
    (format "<meta name=\"tags\" content=\"%s\">\n"
 	   (concat (let ((string (format "%s" (plist-get info :filetags))))
 		 (string-match "(\\(.*\\))"
@@ -32,7 +32,7 @@
   "</div>"
   "</a>"
   "</div>"
-  "<div class=\"col-3 side\"></div>"
+  "<div class=\"col-3 side disappear\"></div>"
   "<div class=\"col-6 test article content center\">"
   (format "<h1 class=\"center\" id=\"title\">%s</h1" (car (plist-get info :title)))
   (format "<meta name=\"date\" content=\"%s\">\n" (format-time-string "%F"))

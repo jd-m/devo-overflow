@@ -28,9 +28,8 @@
   </div>
 
   <script>
-    $.getJSON('../article-db.json', function (data) {
+    $.getJSON('article-db.json', function (data) {
         $.each(data.taglist, function(key, tag){
-
             $('#taglist').append(
                 "<div id=\""+tag+"\"> " +
                     "<h4>" + tag + "</h4>" +
@@ -42,14 +41,14 @@
         });
 
         $.each(data.taglist, function(key, tag){
-            $.each(data.articles, function (i, article) {
+            $.each(data.posts, function (i, article) {
                 $.each(article.tags, function(j, articleTag) {
                     if (articleTag == tag) {
 
-                        $.get('posts/' + article.file, function(articleData) {
+                        $.get('posts-html/' + article.file, function(articleData) {
                          
                             $('#'+tag+'-ul').append(
-                                "<a href=\""+ "posts/" + article.file +"\"><li>" + $(articleData).find("#title").html() + "</li></a>"
+                                "<li><a href=\""+ "posts-html/" + article.file +"\"><li>" + $(articleData).find("#title").html() + "</a></li>"
                         )
                         })
                         

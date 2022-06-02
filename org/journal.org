@@ -1,11 +1,16 @@
-[2022-05-30 Mon] 
-
-Made a post list to list posts and track progress.
-Experimental: Making index as an org file. Posts listed manyally in post list.
+* [2022-05-30 Mon] 
 
 Next:
-- Figure out a way to create posts in the post list easily. List links to post.
 - Make a capture function for devo ideas.
-- Redo card design: DATE (dark cyan) TITLE. More compact list.
-- Make date file with posts listed in date tree.
 - Styling for block quote: Dark cyan (left?) border
+- Make date file with posts listed in date tree.
+
+* [2022-06-02 Thu]
+  - Index.html:
+    - potentially redesign
+  - Series.org:
+    - styling post links to look like links in index. To do this would mean. Using Jquery really.
+  - Styling:
+    - list items: border on hover
+    - fonts and sizing
+  - Add date in to links in tag and series posts.

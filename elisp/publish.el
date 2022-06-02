@@ -17,15 +17,5 @@
    <link rel=\"stylesheet\" href=\"../css/site.css\">"
 	 )
 
-	("static"
-	 :base-directory "~/jd-m.github.io/posts/"
-	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "~/jd-m.github.io/public/"
-	 :recursive t
-
-	 :publishing-function org-publish-attachment
-
-	 )
-
 	("devo-overflow" :components ("posts"))
 	))
