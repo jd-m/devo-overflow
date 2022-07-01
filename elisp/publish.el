@@ -3,9 +3,9 @@
 (setq org-publish-project-alist
       '(
 	("posts"
-	 :base-directory "~/jd-m.github.io/posts/"
+	 :base-directory "~/jd-m.github.io/"
 	 :base-extension "org"
-	 :publishing-directory "~/jd-m.github.io/posts/"
+	 :publishing-directory "~/jd-m.github.io/"
 	 :recursive nil
 	 :publishing-function devo-html-publish-to-html
 	 :headline-levels 4
@@ -14,9 +14,9 @@
 	 )
 	
 	("index"
-	 :base-directory "~/jd-m.github.io/posts/"
+	 :base-directory "~/jd-m.github.io/"
 	 :base-extension "org_index"
-	 :publishing-directory "~/jd-m.github.io/posts/"
+	 :publishing-directory "~/jd-m.github.io/"
 	 :recursive nil
 	 :publishing-function devo-index-html-publish-to-html
 	 :headline-levels 4

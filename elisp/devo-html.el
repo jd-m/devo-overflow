@@ -1,7 +1,6 @@
 (org-export-define-derived-backend 'devo-html 'html
   :translate-alist '((template . devo-html-template)))
 
-
 (defun devo-html-header (info)
   "Header for website"
 
@@ -10,7 +9,7 @@
    
    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
    
-   "<script src=\"../jquery-3.6.0.min.js\"></script>\n"
+   "<script src=\"js/jquery-3.6.0.min.js\"></script>\n"
    (format "<meta name=\"date\" content=\"%s\">\n" (plist-get info :date))
    (format "<meta name=\"tags\" content=\"%s\">\n"
 	   (concat (let ((string (format "%s" (plist-get info :filetags))))
@@ -19,7 +18,7 @@
 		 
 		 (match-string-no-properties 1 string))))
    
-   "<link rel=\"stylesheet\" href=\"../css/site.css\">\n"
+   "<link rel=\"stylesheet\" href=\"css/site.css\">\n"
    "</head>\n"
 
   "<div class=\"header col-12 test\">"
@@ -41,8 +40,8 @@
      "<li><a href=\"post-series.html#20220602191220\">Teach Like A Christian</a></li>"
    "</ul>"
 
-   "<a href=\"tags.html\"><h2>Tags</h2></a>"
-   "<ul id=\"taglist\" ></ul>"
+   "<!--<a href=\"tags.html\"><h2>Tags</h2></a>"
+   "<ul id=\"taglist\" ></ul>-->"
 
   "</div>"
   "<div class=\"col-6 test article content center\">"
@@ -54,13 +53,14 @@
 (defun devo-html-footer (info)
   ""
   (concat
+   "</div>"
    "<hr>"   
    "<div id=\"blogTags\" class=\"blogTags\"></div>"
    "<script>"
    "let tagArr = $('meta[name=\"tags\"]').attr(\"content\").split(\" \");"
    "let tagString = \"\";"
    "$.each(tagArr, function(i, tag) {
-		  tagString = tagString + \"<a href=\\\"../tags.html#\"+tag+\"\\\"> #\"  + tag + \"</a>\"});"
+		  tagString = tagString + \"<a href=\\\"tags.html#\"+tag+\"\\\"> #\"  + tag + \"</a>\"});"
 		  "$('#blogTags').append(tagString);"
 		  "</script>"
 		  "</div>"

@@ -44,15 +44,12 @@ a, a:visited {
 h1, h2, h3, h4 {
     font-family: Courier;
     color: #212427;
+    font-weight: bold;
 }
 
-h4 {
-    font-size: 20px;
-}
+h1 {font-size: 36px; }
 
-h5 {
-    font-size: 18px;
-}
+h2, h3, h4 {font-size: 22px; }
 
 
 .date {
@@ -68,13 +65,14 @@ h5 {
 }
 
 .header h1 {
-
     text-align: center;
     color: darkcyan;
 }
 
 
-
+.small {
+ 
+}
 
 /* Content */
 
@@ -100,9 +98,10 @@ h5 {
     margin: 0px;
 }
 
-.card .date {
+.timestamp {
     color: darkcyan;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-weight: bold;
 
 }
 
@@ -128,14 +127,15 @@ li {
     font-family: Courier;
     font-size: 19px;
     
+    
 }
 
-li a {
+li {
     border-left: 1px solid grey;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
-li:hover a {
+li:hover {
     border-left: 3px solid darkcyan;
     color: darkcyan;
 }
@@ -152,7 +152,7 @@ li:hover a {
 /**/
 
 .side {
-    height: 100%;
+    height: auto;
     float: left;
     padding: 0px 40px;
 }
@@ -232,7 +232,13 @@ blockquote {
     margin: 40px 0px;
     padding: 0px 40px;
     border-left: 1px solid darkcyan;
+    font-weight: bold;
 }
+
+.org-ul li {
+    font-size: 19px;
+    border: none;
+} 
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -252,7 +258,7 @@ blockquote {
   .card {
       height: auto;
       width: 100%;
-      padding-top: 0 px;
+      padding-top: 0px;
       float: left;
       border-left: 1px solid grey;
   }

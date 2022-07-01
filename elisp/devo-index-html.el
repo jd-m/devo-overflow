@@ -9,11 +9,11 @@
     "<head>"
   
    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
-   "<script src=\"../jquery-3.6.0.min.js\"></script>"
+   "<script src=\"js/jquery-3.6.0.min.js\"></script>"
    "<script>"
 
    "</script>"
-   "<link rel=\"stylesheet\" href=\"../css/site.css\">"
+   "<link rel=\"stylesheet\" href=\"css/site.css\">"
  "</head>"
 
  "<div class=\"header col-12 test\">"
@@ -24,11 +24,10 @@
      "<hr style=\"margin-left:40%; margin-right:40%;\">"
      "<hr style=\"margin-left:45%; margin-right:45%;\">"
      "<hr style=\"margin-left:48%; margin-right:48%;\">"
-    
-
+   
    "</div>"
  "</div>"
- "<div class=\"col-3 disappear side\">"
+ "<div class=\"col-3 side\">"
    "<a href=\"post-series.html\"><h2>Series</h2></a>"
    "<ul id=\"series\">"
      "<li><a href=\"post-series.html#20220602142630\">Mining for Wisdom</a></li>"
@@ -37,8 +36,6 @@
      "<li><a href=\"post-series.html#20220602191220\">Teach Like A Christian</a></li>"
    "</ul>"
 
-   "<a href=\"tags.html\"><h2>Tags</h2></a>"
-   "<ul id=\"taglist\" ></ul>"
  "</div>"
  "<div  class=\"col-6 test content center\">"
 
@@ -48,6 +45,8 @@
   (defun devo-index-html-footer (info)
   ""
   (concat
+   "</div>"
+   
    "<hr>"   
    "<div class=\"footer\" style=\"test\"></div>"
    ))
