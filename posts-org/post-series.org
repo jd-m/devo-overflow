@@ -2,12 +2,12 @@
 #+date: 
 #+FILETAGS: 
 
-
 * Thought for the day
   :PROPERTIES:
   :CUSTOM_ID: 20220602191239
   :END:
   Short reflections.
+  * [[file:20220623212643.org][Not as the world gives]]
 
 * Mining for Wisdom: Gems from Solomon's Quarry
   :PROPERTIES:
@@ -15,7 +15,6 @@
   :END:
 
   Some wisdom from the books of Proverbs and Ecclesiastes.
-
 
   * [[file:20220527172601.org][If Your Strong City Is Not God]]
 

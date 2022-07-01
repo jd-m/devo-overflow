@@ -79,8 +79,8 @@ h5 {
 /* Content */
 
 .content {
-    padding-left: 40px;
-    padding-right: 40px;
+    
+    padding: 0px 40px;
 }
 
 .card {
@@ -120,18 +120,23 @@ hr {
 }
 
 ul {
-    list-style-type: circle;
+    list-style-type: none;
+    padding: 0px;
 }
 
 li {
     font-family: Courier;
-    font-size: 18px;
-    margin: 0px;
+    font-size: 19px;
+    
+}
+
+li a {
+    border-left: 1px solid grey;
     padding: 0px 20px;
 }
 
 li:hover a {
-    border-left: 1px solid darkcyan;
+    border-left: 3px solid darkcyan;
     color: darkcyan;
 }
 
@@ -242,6 +247,11 @@ li:hover a {
       width: 100%;
       padding-top: 0 px;
       float: left;
+      border-left: 1px solid grey;
+  }
+
+  .card:hover {
+      border-left: 2px solid darkcyan;
   }
 
   .card h4 {
