@@ -227,6 +227,13 @@ li:hover a {
     text-decoration: underline;
 }
 
+
+blockquote {
+    margin: 40px 0px;
+    padding: 0px 40px;
+    border-left: 1px solid darkcyan;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}

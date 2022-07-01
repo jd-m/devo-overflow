@@ -23,7 +23,7 @@
    "</head>\n"
 
   "<div class=\"header col-12 test\">"
-  "<a href=\"../index.html\">"
+  "<a href=\"index.html\">"
   "<h1 class=\"center\">Devo_Overflow</h1>"
   "<div class=\"triple-line\">"
   "<hr style=\"margin-left:40%; margin-right:40%;\">"
