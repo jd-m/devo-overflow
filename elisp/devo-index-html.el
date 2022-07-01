@@ -32,8 +32,8 @@
    "<a href=\"post-series.html\"><h2>Series</h2></a>"
    "<ul id=\"series\">"
      "<li><a href=\"post-series.html#20220602142630\">Mining for Wisdom</a></li>"
-     "<li><a href=\"post-series.html#20220602191239\">Thought for the Day</a></li>"
-     "<li><a href=\"post-series.html#20220602191235\">Who do you say I am?</a></li>"
+     "<li><a href=\"post-series.html#20220602191239\">Devotional</a></li>"
+     "<!--<li><a href=\"post-series.html#20220602191235\">Who do you say I am?</a></li>-->"
      "<li><a href=\"post-series.html#20220602191220\">Teach Like A Christian</a></li>"
    "</ul>"
 

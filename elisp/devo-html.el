@@ -32,7 +32,19 @@
   "</div>"
   "</a>"
   "</div>"
-  "<div class=\"col-3 side disappear\"></div>"
+  "<div class=\"col-3 side disappear\">"
+     "<a href=\"post-series.html\"><h2>Series</h2></a>"
+   "<ul id=\"series\">"
+     "<li><a href=\"post-series.html#20220602142630\">Mining for Wisdom</a></li>"
+     "<li><a href=\"post-series.html#20220602191239\">Devotional</a></li>"
+     "<!--<li><a href=\"post-series.html#20220602191235\">Who do you say I am?</a></li>-->"
+     "<li><a href=\"post-series.html#20220602191220\">Teach Like A Christian</a></li>"
+   "</ul>"
+
+   "<a href=\"tags.html\"><h2>Tags</h2></a>"
+   "<ul id=\"taglist\" ></ul>"
+
+  "</div>"
   "<div class=\"col-6 test article content center\">"
   (format "<h1 class=\"center\" id=\"title\">%s</h1" (car (plist-get info :title)))
   (format "<meta name=\"date\" content=\"%s\">\n" (format-time-string "%F"))
