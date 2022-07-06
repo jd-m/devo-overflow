@@ -1,10 +1,4 @@
 #+TODO: todo | done
 
 
-
-* todo Add: Teach Like A Christian page
-  - Design page
-  - Link to index
-* todo Add: Devotional page
-* todo Add: Bible Studies Page
-* todo Tidy css for index page
+- [ ] Add JS to redo index
