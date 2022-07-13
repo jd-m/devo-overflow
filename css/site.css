@@ -20,19 +20,19 @@
 }
 
 .content::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 body {
-  font-family: Arial;
-  line-height: 1.5;
-  font-family: 'Fira Sans', Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  font-size: 19px;
-  color: #212427;
+    font-family: Arial;
+    line-height: 1.5;
+    font-family: 'Fira Sans', Raleway, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 19px;
+    color: #212427;
 }
 
 a, a:visited {
@@ -42,8 +42,8 @@ a, a:visited {
 }
 
 h1, h2, h3, h4 {
-    font-family: Courier;
-    color: #212427;
+    font-family: Raleway;
+    color: #4b4b4b;
     font-weight: bold;
 }
 
@@ -57,7 +57,12 @@ h2, h3, h4 {font-size: 22px; }
 
 /* Homepage Header */
 .header {
-    height: auto;
+
+    height: 50px;
+    float: none;
+    margin-bottom: 0;
+    margin: 0;
+    padding-top: 0px; 
     border-bottom: 1px solid darkgrey;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -65,10 +70,98 @@ h2, h3, h4 {font-size: 22px; }
 .header h1 {
     text-align: center;
     color: darkcyan;
-    font-size: 36px;
+    font-size: 22px;
 }
 
 .small {font-size:22px;}
+
+
+
+/*NAvbar*/
+
+.navbar {
+    float: left:
+        display:inline;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 25%;
+    padding: 0px 20px;
+    
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: grey;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Raleway;
+    margin: auto;
+}
+
+.navbar a:hover {
+    color: darkcyan;
+}
+
+
+.drop-navbar {
+    width: 100%;
+    display: block;
+}
+
+.drop-navbar ul {
+    background-color: lightgrey;
+}
+
+.drop-navbar li {
+    padding: 2px 40px;
+}
+
+.drop-navbar li:hover {
+    padding: 2px 40px;
+    color: white;
+    background-color: darkcyan;        
+}
+
+
+.logo {
+    float: left;
+    display: inline;
+    height: auto;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0px 25px;
+    font-family: courier;
+}
+
+.logo hr {
+    
+    margin: 2px 25px;
+}
+
+
+.dropdown-icon {
+    float: right;
+    margin: auto;
+    margin-top: 0;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    border: 2px solid white;
+}
+.dropdown-icon hr {
+    border: 1px solid darkcyan;
+    margin: 4px auto;
+}
+
+
+
 
 /* Content */
 
@@ -89,23 +182,11 @@ hr {
 
 ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
+
 }
 
-li {
-    font-family: Courier;
-    font-size: 19px;    
-}
-
-li {
-    border-left: 1px solid grey;
-    padding: 0px 10px;
-}
-
-li:hover {
-    border-left: 3px solid darkcyan;
-    color: darkcyan;
-}
 
 /*Buttons*/
 .pagebutton {
@@ -119,7 +200,7 @@ li:hover {
 /**/
 
 .side {
-    height: auto;
+    min-height: 1px;
     float: left;
     padding: 0px 40px;
 }
@@ -137,8 +218,8 @@ p {
 img {
 
     object-fit: cover;
-width: 100%;
-height: 400px;
+    width: 100%;
+    height: 400px;
 }
 
 
@@ -150,35 +231,7 @@ height: 400px;
     display: block;
 }
 
-.pagebutton {
-    float: left;
-    width: 46%;
-    height: 40px;
-    background: white;
-    font-size: 24px;
-    font-family: courier;
-    color: darkcyan;
-    margin: 5px 2%;
-    border-style: none;
-}
 
-.pagebutton:hover {
-    text-decoration: underline;
-}
-
-#nextButton:disabled {
-    
-    color: grey;
-    text-decoration: none;
-    visibility: hidden;
-}
-
-#prevButton:disabled {
-    
-    color: grey;
-    text-decoration: none;
-    visibility: hidden;
-}
 
 /*Tag links*/
 
@@ -200,77 +253,93 @@ blockquote {
     font-weight: bold;
 }
 
-.org-ul li {
-    font-size: 19px;
-    border: none;
-} 
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  .card {
-      height: auto;
-      width: 100%;
-      padding-top: 0px;
-      float: left;
-      border-left: 1px solid grey;
-  }
-
-  .card:hover {
-      border-left: 2px solid darkcyan;
-  }
-
-  .card h4 {
-      font-size: 22px;
-  }
-  
-  .content {
-      float: left;
-  }
-
-
-  .side {
-      
-      padding: 0px 40px;
-  }
-
-  .side-border {
-      border-left: 1px solid darkcyan;
-      border-right: 1px solid darkcyan;
-  }
-
-  .article img {
-    width: 100%;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto; 
+.hide {
+    display: none;
 }
 
-  .disappear {
-      display: block;
-  }
 
-  .appear {
-      display: none;
-  }
-  
-  .pagebutton {
-    float: left;
-    width: 40%;
-    height: 50px;
-  }
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .card {
+	height: auto;
+	width: 100%;
+	padding-top: 0px;
+	float: left;
+	margin: 20px 0px;
+    }
+
+    
+    .card h4 {
+        font-size: 22px;
+        margin: 0;
+        font-family: Raleway;
+    }
+
+    .card h4 {
+        font-size: 24px;
+        
+    }
+
+    .card h4:hover {
+        color: darkcyan; 
+    }
+
+    
+    
+    .content {
+	float: left;
+    }
+
+
+    .side {
+	padding: 0px 40px;
+    }
+
+    .side-border {
+	border-left: 1px solid darkcyan;
+	border-right: 1px solid darkcyan;
+    }
+
+    .article img {
+	width: 100%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto; 
+    }
+
+    .disappear {
+	display: block;
+    }
+
+    .appear {
+	display: none;
+    }
+    
+    .pagebutton {
+	float: left;
+	width: 40%;
+	height: 50px;
+    }
+
+
+    .navbar {
+	width: 50%;
+    }
 
 
 }

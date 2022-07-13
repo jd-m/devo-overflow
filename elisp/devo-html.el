@@ -92,32 +92,74 @@ information."
      "<link rel=\"stylesheet\" href=\"/css/site.css\">\n"
      "</head>\n"
 
+
      "<div class=\"header col-12 test\">"
      "<a href=\"/index.html\">"
-     "<h1 class=\"center\">Devo_Overflow</h1>"
+     "<div class=\"logo\">"
+     "<h1>Devo_Overflow</h1>"
      "<div class=\"triple-line\">"
-     "<hr style=\"margin-left:40%; margin-right:40%;\">"
-     "<hr style=\"margin-left:45%; margin-right:45%;\">"
-     "<hr style=\"margin-left:48%; margin-right:48%;\">"
+     "<hr style=\"width: 100px;\">"
+     "<hr style=\"width: 50px;\">"
+     "<hr style=\"width: 25px;\">"
+     "</div>"
      "</div>"
      "</a>"
+     
+     "<div class=\"navbar disappear\">"
+     "<a href=\"/post-series.html#20220602142630\">Devotionals</a>"
+     "<a href=\"/post-series.html#20220602191239\">Series</a>"
+     "<a href=\"/post-series.html#20220602191220\">About</a>"
      "</div>"
-     "<div class=\"col-3 side disappear\">"
-     "<a href=\"/post-series.html\"><h2>Series</h2></a>"
-     "<ul id=\"series\">"
-     "<li><a href=\"/post-series.html#20220602142630\">Mining for Wisdom</a></li>"
-     "<li><a href=\"/post-series.html#20220602191239\">Devotional</a></li>"
-     "<li><a href=\"/post-series.html#20220602191220\">Teach Like A Christian</a></li>"
-     "</ul>"
+     
+     "<div class=\"dropdown-icon appear\" >"
+     "<hr style=\"width: 30px\">"
+     "<hr style=\"width: 15px\">"
+     "<hr style=\"width: 7px\">"
      "</div>"
+     
+     "<script>"
+     "$(\".dropdown-icon\").click(function(){"
+        "$(\".drop-navbar\").toggleClass(\"hide\");"
+	"})"
+	"</script>"
+	"</div>"
+	
+	"<div class=\"drop-navbar hide\">"
+	"<ul>"
+	"<li><a href=\"/post-series.html#20220602142630\">Devotionals</a></li>"
+	"<li><a href=\"/post-series.html#20220602191239\">Series</a></li>"
+	"<li><a href=\"/post-series.html#20220602191220\">About</a></li>"
+	"</ul>"
+	"</div>"
+	
+	"<div class=\"col-3 side disappear\">"
+	
+	"<div class=\"hide\">"
+	"<a href=\"/post-series.html\">"
+	"<h2>Series</h2>"
+	"</a>"
+	"<ul id=\"series\">"
+	"<li>"
+	"<a href=\"/post-series.html#20220602142630\">Wisdom Mine</a>"
+	"</li>"
+	"<li>"
+	"<a href=\"/post-series.html#20220602191239\">Devotionals</a>"
+	"</li>"
+	"<li>"
+	"<a href=\"/post-series.html#20220602191220\">T.L.A.C</a>"
+	"</li>"
+	"</ul>"
+	"</div>"
+	"</div>"
+	
+
      )))
 
 
 (defun devo-html-footer (info)
   ""
   (concat
-   "<hr>"   
-   "<div class=\"footer\" style=\"test\"></div>"
+   "<div class=\"footer\" style=\"\"></div>"
    ))
 
 ;Templates
