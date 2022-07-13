@@ -1,11 +1,41 @@
-<head><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/jquery-3.6.0.min.js"></script><script></script><link rel="stylesheet" href="css/site.css"></head><div class="header col-12 test"><a href="index.html"><h1 class="center">Devo_Overflow</h1></a><div class="triple-line"><hr style="margin-left:40%; margin-right:40%;"><hr style="margin-left:45%; margin-right:45%;"><hr style="margin-left:48%; margin-right:48%;"></div></div><div class="col-3 side"><a href="post-series.html"><h2>Series</h2></a><ul id="series"><li><a href="post-series.html#20220602142630">Mining for Wisdom</a></li><li><a href="post-series.html#20220602191239">Devotional</a></li><!--<li><a href="post-series.html#20220602191235">Who do you say I am?</a></li>--><li><a href="post-series.html#20220602191220">Teach Like A Christian</a></li></ul></div><div  class="col-6 test content center">
-<div id="outline-container-org3de2d39" class="outline-2 small">
-<h2 id="org3de2d39">Posts</h2>
-<div class="outline-text-2" id="text-org3de2d39">
-<ul class="org-ul">
-<li><a href="20220623212643.html">[2022-06-03] Not as the World Gives</a></li>
-<li><span class="timestamp-wrapper"><span class="timestamp">[2022-05-27 Fri] </span></span> <a href="20220527172601.html">One Man's Strong City is Another Man's Ruin</a></li>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/js/jquery-3.6.0.min.js"></script>
+<meta name="post-title" content="Posts">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<div class="header col-12 test"><a href="/index.html"><div class="logo"><h1>Devo_Overflow</h1><div class="triple-line"><hr style="width: 100px;"><hr style="width: 50px;"><hr style="width: 25px;"></div></div></a><div class="navbar disappear"><a href="/post-series.html#20220602142630">Devotionals</a><a href="/post-series.html#20220602191239">Series</a><a href="/post-series.html#20220602191220">About</a></div><div class="dropdown-icon appear" ><hr style="width: 30px"><hr style="width: 15px"><hr style="width: 7px"></div><script>$(".dropdown-icon").click(function(){$(".drop-navbar").toggleClass("hide");})</script></div><div class="drop-navbar hide"><ul><li><a href="/post-series.html#20220602142630">Devotionals</a></li><li><a href="/post-series.html#20220602191239">Series</a></li><li><a href="/post-series.html#20220602191220">About</a></li></ul></div><div class="col-3 side disappear"><div class="hide"><a href="/post-series.html"><h2>Series</h2></a><ul id="series"><li><a href="/post-series.html#20220602142630">Wisdom Mine</a></li><li><a href="/post-series.html#20220602191239">Devotionals</a></li><li><a href="/post-series.html#20220602191220">T.L.A.C</a></li></ul></div></div><div class="col-6 test content center"><div>
+<div class="posts"><h2 id="posts">Posts</h2><ul class="posts"><li><a href="posts/20220623212643.html"><em>23 Jun 2022</em> Not as the World Gives</a></li>
+<li><a href="posts/20220527172601.html"><em>27 May 2022</em> One Man's Strong City is Another Man's Ruin</a></li>
 </ul>
+
+
+<script>
+
+        $(".posts a").each(function (i, obj) {
+            var a_href = $(this).attr('href');
+            
+            $.get(a_href, function (data) {
+	            var date = $(data).filter('meta[name="date"]').attr("content");
+	            var post_title = $(data).filter('meta[name="post-title"]').attr("content");
+                var tags = $(data).filter('meta[name="tags"]').attr("content");
+                var text = $(data).find("p").text().substring(0,250);
+                var html_string = "";          
+
+                
+                html_string = "<a href=\"" + a_href + "\">\n" +
+                    "<div class=\"center card\">\n" + 
+                    "<h4><span>" + post_title + "</span></h4>\n" +
+                    "<span class=\"date\">" + date + " </span>" + 
+                    "<p>" + text + "..." + "</p>\n" +
+                    "</div>\n" + 
+                    "</a>\n";
+                $("#posts").after(html_string);
+            });
+        });
+
+        $(".posts ul").empty();
+
+</script>
 </div>
-</div>
-</div><hr><div class="footer" style="test"></div>
+</div></div><div class="footer" style=""></div>

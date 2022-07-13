@@ -2,7 +2,41 @@
 
 * Posts 
   :PROPERTIES:
-  :HTML_CONTAINER_CLASS: small
+  :attr_html: :id posts
+  :html_container: div
+  :html_container_class: posts
   :END:
-  *  [[file:20220623212643.org][[2022-06-03] Not as the World Gives]]
-  * [2022-05-27] [[file:20220527172601.org][One Man's Strong City is Another Man's Ruin]]
+
+#+attr_html: :class posts
+  - [[file:posts/20220623212643.org][/23 Jun 2022/ Not as the World Gives]]
+  - [[file:posts/20220527172601.org][/27 May 2022/ One Man's Strong City is Another Man's Ruin]]
+  
+
+#+begin_export javascript
+
+
+        $(".posts a").each(function (i, obj) {
+            var a_href = $(this).attr('href');
+            
+            $.get(a_href, function (data) {
+	            var date = $(data).filter('meta[name="date"]').attr("content");
+	            var post_title = $(data).filter('meta[name="post-title"]').attr("content");
+                var tags = $(data).filter('meta[name="tags"]').attr("content");
+                var text = $(data).find("p").text().substring(0,250);
+                var html_string = "";          
+
+                
+                html_string = "<a href=\"" + a_href + "\">\n" +
+                    "<div class=\"center card\">\n" + 
+                    "<h4><span>" + post_title + "</span></h4>\n" +
+                    "<span class=\"date\">" + date + " </span>" + 
+                    "<p>" + text + "..." + "</p>\n" +
+                    "</div>\n" + 
+                    "</a>\n";
+                $("#posts").after(html_string);
+            });
+        });
+
+        $(".posts ul").empty();
+
+#+end_export
