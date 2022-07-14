@@ -280,7 +280,6 @@ blockquote {
 	width: 100%;
 	padding-top: 0px;
 	float: left;
-	margin: 20px 0px;
     }
 
     
@@ -292,7 +291,6 @@ blockquote {
 
     .card h4 {
         font-size: 24px;
-        
     }
 
     .card h4:hover {
