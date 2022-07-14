@@ -28,7 +28,7 @@
 body {
     font-family: Arial;
     line-height: 1.5;
-    font-family: 'Fira Sans', Raleway, sans-serif;
+    font-family: Raleway, sans-serif;
     padding: 0px;
     margin: 0px;
     font-size: 19px;
@@ -44,11 +44,10 @@ a, a:visited {
 h1, h2, h3, h4 {
     font-family: Raleway;
     color: #4b4b4b;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 h2, h3, h4 {font-size: 22px; }
-
 
 .date {
     color: darkgray;
@@ -73,11 +72,7 @@ h2, h3, h4 {font-size: 22px; }
     font-size: 22px;
 }
 
-.small {font-size:22px;}
-
-
-
-/*NAvbar*/
+/*Navbar*/
 
 .navbar {
     float: left:
@@ -112,17 +107,27 @@ h2, h3, h4 {font-size: 22px; }
 }
 
 .drop-navbar ul {
-    background-color: lightgrey;
+    background-color: grey;
+    
 }
 
 .drop-navbar li {
-    padding: 2px 40px;
+    
+    padding: 6px 40px;
+}
+
+.drop-navbar a {
+    color: white;
 }
 
 .drop-navbar li:hover {
-    padding: 2px 40px;
     color: white;
-    background-color: darkcyan;        
+    background-color: darkcyan;       
+}
+
+
+.heading {
+    border-bottom: 1px solid darkcyan;
 }
 
 
@@ -158,6 +163,35 @@ h2, h3, h4 {font-size: 22px; }
 .dropdown-icon hr {
     border: 1px solid darkcyan;
     margin: 4px auto;
+}
+
+
+ul.posts {
+    padding: 0px 30px;
+    
+}
+
+h3 {
+    padding: 0px 10px;
+    font-weight: bold;
+} 
+
+
+.posts li { 
+    list-style-type:  circle;
+    color: grey;
+    
+}
+
+.posts li a {
+    color: darkcyan;
+}
+
+
+.posts li a:hover {
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -278,7 +312,7 @@ blockquote {
     .card {
 	height: auto;
 	width: 100%;
-	padding-top: 0px;
+	padding: 0px 10px;
 	float: left;
     }
 
