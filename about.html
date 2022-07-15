@@ -1,7 +1,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/js/jquery-3.6.0.min.js"></script>
-<meta name="post-title" content="Posts">
+<meta name="post-title" content="About">
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
@@ -57,38 +57,10 @@ $(".drop-navbar").toggleClass("hide");
 </ul>
 </div>
 </div>
-<div class="col-6 test indent-1 center"><div>
-<div class="posts"><h2 id="posts" class="heading">Recent Posts</h2><ul class="posts indent-3"><li><a href="posts/20220623212643.html"><em>23 Jun 2022</em> Not as the World Gives</a></li>
-<li><a href="posts/20220527172601.html"><em>27 May 2022</em> One Man's Strong City is Another Man's Ruin</a></li>
-</ul>
+<div class="col-6 test indent-1 center"><h1 class="heading">About</h1>
+<div><p class="indent-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pellentesque sem. Maecenas sodales purus a tellus pretium, commodo pretium leo aliquam. Nam lorem lacus, bibendum id venenatis sed, dictum non magna. Vivamus blandit porttitor velit a posuere. Aliquam blandit mi ut ex iaculis, nec suscipit est convallis. Vivamus egestas elementum felis, at vehicula nisl aliquam ac. Donec sed dui vitae ex euismod maximus. Nulla sed feugiat arcu, ut mollis lorem.
+</p>
 
-
-<script>
-
-        $(".posts a").each(function (i, obj) {
-            var a_href = $(this).attr('href');
-            
-            $.get(a_href, function (data) {
-	            var date = $(data).filter('meta[name="date"]').attr("content");
-	            var post_title = $(data).filter('meta[name="post-title"]').attr("content");
-                var tags = $(data).filter('meta[name="tags"]').attr("content");
-                var text = $(data).find("p").text().substring(0,250);
-                var html_string = "";          
-
-                
-                html_string = "<a href=\"" + a_href + "\">\n" +
-                    "<div class=\"center card\">\n" + 
-                    "<h4><span>" + post_title + "</span></h4>\n" +
-                    "<span class=\"date\">" + date + " </span>" + 
-                    "<p>" + text + "[...]" + "</p>\n" +
-                    "</div>\n" + 
-                    "</a>\n";
-                $("#posts").after(html_string);
-            });
-        });
-
-        $(".posts ul").empty();
-
-</script>
-</div>
+<p>Etiam quis imperdiet ligula. Quisque sit amet sapien nulla. In magna urna, efficitur vel eros vel, pulvinar eleifend sapien. In hac habitasse platea dictumst. Phasellus fermentum facilisis massa, eget varius nibh ullamcorper nec. Cras metus mauris, scelerisque vitae diam ac, condimentum hendrerit tortor. Praesent tincidunt ut elit posuere eleifend. Sed quis lacus eget arcu pellentesque dignissim dapibus eget massa. Proin eu vehicula dolor.
+</p>
 </div></div><div class="footer" style=""></div>

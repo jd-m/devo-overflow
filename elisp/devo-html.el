@@ -95,8 +95,9 @@ information."
 
 
      "<div class=\"header col-12 test\">\n"
+
      "<a href=\"/index.html\">\n"
-     "<div class=\"logo\">\n"
+     "<div class=\"logo indent-1\">\n"
      "<h1>Devo_Overflow</h1>\n"
      "<div class=\"triple-line\">\n"
      "<hr style=\"width: 100px;\">\n"
@@ -107,9 +108,9 @@ information."
      "</a>\n"
      
      "<div class=\"navbar disappear\">\n"
-     "<a href=\"/post-series.html#20220602142630\">Devotionals</a>\n"
-     "<a href=\"/post-series.html#20220602191239\">Series</a>\n"
-     "<a href=\"/post-series.html#20220602191220\">About</a>\n"
+     "<a href=\"/index.html\">Recent</a>\n"
+     "<a href=\"/post-series.html\">Devotionals</a>\n"
+     "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
      
      "<div class=\"dropdown-icon appear\" >\n"
@@ -127,9 +128,10 @@ information."
 	
 	"<div class=\"drop-navbar hide\">\n"
 	"<ul>\n"
-	"<li><a href=\"/post-series.html#20220602142630\">Devotionals</a></li>\n"
-	"<li><a href=\"/post-series.html#20220602191239\">Series</a></li>\n"
-	"<li><a href=\"/post-series.html#20220602191220\">About</a></li>\n"
+	"<a href=\"/index.html\"><li class=\"indent-2\">Recent</li></a>\n"
+	"<a href=\"/post-series.html\"><li class=\"indent-2\">Devotionals</li></a>\n"
+	"<a href=\"/about.html\"><li class=\"indent-2\">About</li></a>\n"
+
 	"</ul>\n"
 	"</div>\n"
 	
@@ -171,12 +173,13 @@ CONTENTS is the transcoded contents string.  INFO is a plist
 holding export options."
     (let
 	((devo-title-headline (plist-get info :devo-title-headline))
+	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
 	 (title (car (plist-get info :title)))
 	 (date (plist-get info :date)))
       (concat
        (devo-html-header info)     
-       "<div class=\"col-6 test content center\">"
-       (if devo-title-headline (concat "<h1>" title "</h1>\n") "")
+       "<div class=\"col-6 test indent-1 center\">"
+       (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
        (if date
        (format "<span class=\"date\">%s</span>\n\n"  (format "%s" (plist-get info :date))) "")
        contents

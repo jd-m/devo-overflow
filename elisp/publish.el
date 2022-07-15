@@ -15,7 +15,7 @@
 	
 	("index"
 	 :base-directory "~/jd-m.github.io/"
-	 :base-extension "org_index"
+	 :base-extension "org"
 	 :publishing-directory "~/jd-m.github.io/"
 	 :recursive nil
 	 :publishing-function devo-html-publish-to-html

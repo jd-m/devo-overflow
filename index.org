@@ -1,13 +1,13 @@
 #+title: Posts
 
-* Recent Posts 
+* Recent Posts
   :PROPERTIES:
-  :attr_html: :id posts  :class heading
+  :attr_html: :id posts :class heading
   :html_container: div
-  :html_container_class: posts
+  :html_container_class: posts 
   :END:
 
-#+attr_html: :class posts
+#+attr_html: :class posts indent-3
   - [[file:posts/20220623212643.org][/23 Jun 2022/ Not as the World Gives]]
   - [[file:posts/20220527172601.org][/27 May 2022/ One Man's Strong City is Another Man's Ruin]]
   
@@ -30,7 +30,7 @@
                     "<div class=\"center card\">\n" + 
                     "<h4><span>" + post_title + "</span></h4>\n" +
                     "<span class=\"date\">" + date + " </span>" + 
-                    "<p>" + text + "..." + "</p>\n" +
+                    "<p>" + text + "[...]" + "</p>\n" +
                     "</div>\n" + 
                     "</a>\n";
                 $("#posts").after(html_string);
