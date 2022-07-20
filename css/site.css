@@ -73,7 +73,6 @@ h1 { font-size: 32px; font-weight: bold;}
 /*Navbar*/
 
 .navbar {
-    float: left:
     display:inline;
     background-color: white;
     overflow: hidden;
@@ -102,7 +101,6 @@ ul {
 
 .navbar a:hover {
     color: darkcyan;
-
 }
 
 
@@ -288,6 +286,15 @@ blockquote {
 }
 
 
+.share-buttons {
+    float:right;
+    display: inline;
+    font-size: 28px;
+}
+
+.share-buttons a {
+    padding-right: 10px;
+}
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -340,7 +347,7 @@ blockquote {
 
 
     .navbar {
-	width: 50%;
+	text-overflow: "";
     }
 
 

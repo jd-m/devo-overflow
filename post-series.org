@@ -2,22 +2,23 @@
 #+OPTIONS: devo-title-headline:t  devo-title-headline-class:heading
 
 * Devotionals
-:PROPERTIES:
+   :PROPERTIES:
    :attr_html: :class list-heading
    :END:
-
   #+attr_html: :class posts indent-2
   - 23 June 2022 [[file:posts/20220623212643.org][Not as the World Gives]]
-  - 27 May 2022 [[file:posts/20220527172601.org][One Man's Strong City is Another's Ruin]]
-
-
-* COMMENT Teach Like A Christian
-  :PROPERTIES:
-  :CUSTOM_ID: 20220602191220
-  :END:
+  - 27 May 2022 [[file:posts/20220527172601.org][One Man's City is Another Man's Ruin]]
+    
 
 * COMMENT Who do you say that I am?
   :PROPERTIES:
   :CUSTOM_ID: 20220602191235
   :END:
+
+* [[file:teach-like-a-christian.org][Teach Like A Christian]]
+  :PROPERTIES:
+  :attr_html: :class posts list-heading
+  :CUSTOM_ID: 20220602191220
+  :END:
+- [[file:posts/20220715192145.org][1: The Sell]]
 

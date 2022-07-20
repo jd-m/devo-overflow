@@ -1,10 +1,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/js/jquery-3.6.0.min.js"></script>
-<meta name="post-title" content="Posts">
-<link rel="stylesheet" href="/css/site.css">
+<meta property="og:title" content="Posts"/>
+<link rel="stylesheet" href="/css/site.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/></head>
 <div class="header col-12 test">
 <a href="/index.html">
 <div class="logo indent-1">
@@ -19,6 +19,8 @@
 <div class="navbar disappear">
 <a href="/index.html">Recent</a>
 <a href="/post-series.html">Devotionals</a>
+<a href="/bible-notes.html">Bible Notes</a>
+<a href="/bible-memory.html">Memorise Scripture</a>
 <a href="/about.html">About</a>
 </div>
 <div class="dropdown-icon appear" >
@@ -36,6 +38,8 @@ $(".drop-navbar").toggleClass("hide");
 <ul>
 <a href="/index.html"><li class="indent-2">Recent</li></a>
 <a href="/post-series.html"><li class="indent-2">Devotionals</li></a>
+<a href="/bible-notes.html"><li class="indent-2">Bible Notes</li></a>
+<a href="/bible-memory.html"><li class="indent-2">Memorise Scripture</li></a>
 <a href="/about.html"><li class="indent-2">About</li></a>
 </ul>
 </div>
@@ -58,7 +62,8 @@ $(".drop-navbar").toggleClass("hide");
 </div>
 </div>
 <div class="col-6 test indent-1 center"><div>
-<div class="posts"><h2 id="posts" class="heading">Recent Posts</h2><ul class="posts indent-3"><li><a href="posts/20220623212643.html"><em>23 Jun 2022</em> Not as the World Gives</a></li>
+<div class="posts"><h2 id="posts" class="heading">Recent Posts</h2><ul class="posts indent-3"><li><a href="posts/20220719195738.html"><em>17 July 2022</em> One Thing You Lack</a></li>
+<li><a href="posts/20220623212643.html"><em>23 Jun 2022</em> Not as the World Gives</a></li>
 <li><a href="posts/20220527172601.html"><em>27 May 2022</em> One Man's Strong City is Another Man's Ruin</a></li>
 </ul>
 
@@ -69,9 +74,9 @@ $(".drop-navbar").toggleClass("hide");
             var a_href = $(this).attr('href');
             
             $.get(a_href, function (data) {
-	            var date = $(data).filter('meta[name="date"]').attr("content");
-	            var post_title = $(data).filter('meta[name="post-title"]').attr("content");
-                var tags = $(data).filter('meta[name="tags"]').attr("content");
+	            var date = $(data).filter('meta[property="date"]').attr("content");
+	            var post_title = $(data).filter('meta[property="og:title"]').attr("content");
+                var tags = $(data).filter('meta[property="tags"]').attr("content");
                 var text = $(data).find("p").text().substring(0,250);
                 var html_string = "";          
 
@@ -91,4 +96,5 @@ $(".drop-navbar").toggleClass("hide");
 
 </script>
 </div>
-</div></div><div class="footer" style=""></div>
+</div></div><div class="footer" style="">
+</div>

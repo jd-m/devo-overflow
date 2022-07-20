@@ -1,8 +1,11 @@
 #+title: Not as the World Gives
 #+date: 06 May 2022
 #+DEVO_POST_TAGS: devotional
-#+OPTIONS: devo-title-headline:t
 
+#+OPTIONS: devo-title-headline:t  devo-share-links:t
+#+DEVO_POST_IMG: img/bg-1.jpg
+
+[[../img/bg-1.jpg]]
 
 Yesterday I went to the Hope Explored session on peace and something that came up was How Jesus greets His disciples after He is raised from the dead.
 

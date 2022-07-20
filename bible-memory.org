@@ -1,0 +1,3 @@
+#+title: Memorise Scripture
+#+OPTIONS: devo-title-headline:t  devo-title-headline-class:heading
+

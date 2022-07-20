@@ -1,4 +1,4 @@
-(org-export-define-derived-backend 'devo-html 'html
+(org-export-define-derived-backend '-html 'html
   :translate-alist '(
 		     (template . devo-html-template)
 		     (headline . devo/ox-slimhtml-headline)
@@ -35,7 +35,9 @@
 		   (:html-body-attr "HTML_BODY_ATTR" nil "" t)
 		   (:devo-title-headline "DEVO_TITLE_HEADLINE" "devo-title-headline" nil t)
 		   (:devo-title-headline-class "DEVO_TITLE_HEADLINE_CLASS" "devo-title-headline-class" nil space)
+		   (:devo-post-img "DEVO_POST_IMG" "devo-post-img" nil t)
 		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
+		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
 		   )
   )
@@ -79,18 +81,22 @@ information."
   ""
   (let ((title (car (plist-get info :title)))
 	(date (plist-get info :date))
+	(devo-post-img (plist-get info :devo-post-img))
 	(devo-post-tags (plist-get info :devo-post-tags)))
     (concat
      "<head>\n"
      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
      
      "<script src=\"/js/jquery-3.6.0.min.js\"></script>\n"
-     (if title (format "<meta name=\"post-title\" content=\"%s\">\n" title) "")
-     (if date (format "<meta name=\"date\" content=\"%s\">\n" (format "%s" (plist-get info :date))) "")
-     (if devo-post-tags (format "<meta name=\"tags\" content=\"%s\">\n" devo-post-tags) "")
+     (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
+     (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
+     (if devo-post-tags (format "<meta property=\"tags\" content=\"%s\">\n" devo-post-tags) "")
+
+     (if devo-post-img (concat "<meta property=\"og:image\" content=\"http://jd-m.github.io/" devo-post-image"\"/></n>") "")
      
-     "<link rel=\"stylesheet\" href=\"/css/site.css\">\n"
+     "<link rel=\"stylesheet\" href=\"/css/site.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
+     "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/>"
      "</head>\n"
 
 
@@ -110,6 +116,8 @@ information."
      "<div class=\"navbar disappear\">\n"
      "<a href=\"/index.html\">Recent</a>\n"
      "<a href=\"/post-series.html\">Devotionals</a>\n"
+     "<a href=\"/bible-notes.html\">Bible Notes</a>\n"
+     "<a href=\"/bible-memory.html\">Memorise Scripture</a>\n"
      "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
      
@@ -130,6 +138,8 @@ information."
 	"<ul>\n"
 	"<a href=\"/index.html\"><li class=\"indent-2\">Recent</li></a>\n"
 	"<a href=\"/post-series.html\"><li class=\"indent-2\">Devotionals</li></a>\n"
+	"<a href=\"/bible-notes.html\"><li class=\"indent-2\">Bible Notes</li></a>\n"
+	"<a href=\"/bible-memory.html\"><li class=\"indent-2\">Memorise Scripture</li></a>\n"
 	"<a href=\"/about.html\"><li class=\"indent-2\">About</li></a>\n"
 
 	"</ul>\n"
@@ -154,15 +164,21 @@ information."
 	"</ul>\n"
 	"</div>\n"
 	"</div>\n"
-	
+
+        
 
      )))
+
 
 
 (defun devo-html-footer (info)
   ""
   (concat
-   "<div class=\"footer\" style=\"\"></div>"
+   "<div class=\"footer\" style=\"\">\n"
+
+   
+  
+"</div>"
    ))
 
 ;Templates
@@ -174,14 +190,31 @@ holding export options."
     (let
 	((devo-title-headline (plist-get info :devo-title-headline))
 	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
+	 (devo-share-links (plist-get info :devo-share-links))
+	 (devo-post-img (plist-get info :devo-post-img))
 	 (title (car (plist-get info :title)))
 	 (date (plist-get info :date)))
       (concat
        (devo-html-header info)     
+
        "<div class=\"col-6 test indent-1 center\">"
        (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
        (if date
-       (format "<span class=\"date\">%s</span>\n\n"  (format "%s" (plist-get info :date))) "")
+	   (format "<span class=\"date\">%s</span>\n\n"  (format "%s" (plist-get info :date))) "")
+
+       (if
+       devo-share-links
+  (concat "<div class=\"share-buttons\">\n"
+
+	  "<a class=\"fa fa-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u="
+	  "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"</a>\n"
+	  
+	  "<a class=\"fa fa-twitter\"href=\"https://twitter.com/share?url="
+    "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"></a>\n"
+    
+  "</div>\n")
+  ""
+  )
        contents
        "</div>"
        (devo-html-footer info)
