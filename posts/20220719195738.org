@@ -1,8 +1,10 @@
 #+title: One Thing You Lack
 #+date: 20 July 2022
 #+DEVO_POST_TAGS: devotional
+#+DEVO_POST_IMAGE: "burning-money.jpg"
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DEVO_POST_IMG: img/burning-money.jpg
+
+
 
 [[file:../img/burning-money.jpg]]
 

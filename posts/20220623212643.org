@@ -1,9 +1,8 @@
 #+title: Not as the World Gives
 #+date: 06 May 2022
 #+DEVO_POST_TAGS: devotional
-
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DEVO_POST_IMG: img/bg-1.jpg
+#+DEVO_POST_IMAGE: "bg-1.jpg"
 
 [[../img/bg-1.jpg]]
 

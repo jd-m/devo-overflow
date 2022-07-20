@@ -2,7 +2,7 @@
 #+date: 27 May 2022
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DEVO_POST_IMG: img/ruin-7.jpg
+#+DEVO_POST_IMAGE: ruin-7.jpg
 
   [[../img/ruin-7.jpg]]
 

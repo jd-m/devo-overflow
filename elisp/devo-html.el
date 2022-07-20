@@ -35,7 +35,7 @@
 		   (:html-body-attr "HTML_BODY_ATTR" nil "" t)
 		   (:devo-title-headline "DEVO_TITLE_HEADLINE" "devo-title-headline" nil t)
 		   (:devo-title-headline-class "DEVO_TITLE_HEADLINE_CLASS" "devo-title-headline-class" nil space)
-		   (:devo-post-img "DEVO_POST_IMG" "devo-post-img" nil t)
+		   (:devo-post-image "DEVO_POST_IMAGE" "devo-post-image" nil t)
 		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
 		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
@@ -81,7 +81,7 @@ information."
   ""
   (let ((title (car (plist-get info :title)))
 	(date (plist-get info :date))
-	(devo-post-img (plist-get info :devo-post-img))
+	(devo-post-image (plist-get info :devo-post-image))
 	(devo-post-tags (plist-get info :devo-post-tags)))
     (concat
      "<head>\n"
@@ -92,7 +92,7 @@ information."
      (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
      (if devo-post-tags (format "<meta property=\"tags\" content=\"%s\">\n" devo-post-tags) "")
 
-     (if devo-post-img (concat "<meta property=\"og:image\" content=\"http://jd-m.github.io/" devo-post-image"\"/></n>") "")
+     (if devo-post-image (format "<meta property=\"og:image\" content=\"https://jd-m.github.io/img/%s\"/></n>" devo-post-image) "")
      
      "<link rel=\"stylesheet\" href=\"/css/site.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
@@ -133,7 +133,6 @@ information."
 	"})\n"
 	"</script>\n"
 	"</div>\n"
-	
 	"<div class=\"drop-navbar hide\">\n"
 	"<ul>\n"
 	"<a href=\"/index.html\"><li class=\"indent-2\">Recent</li></a>\n"
@@ -165,6 +164,7 @@ information."
 	"</div>\n"
 	"</div>\n"
 
+
         
 
      )))
@@ -191,7 +191,7 @@ holding export options."
 	((devo-title-headline (plist-get info :devo-title-headline))
 	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
 	 (devo-share-links (plist-get info :devo-share-links))
-	 (devo-post-img (plist-get info :devo-post-img))
+	 (devo-post-image (plist-get info :devo-post-image))
 	 (title (car (plist-get info :title)))
 	 (date (plist-get info :date)))
       (concat

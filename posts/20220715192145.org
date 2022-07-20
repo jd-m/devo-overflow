@@ -2,7 +2,7 @@
 #+date: 15 July 2022
 #+DEVO_POST_TAGS: TLAC
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DEVO_POST_IMG: img/ruin-7.jpg
+#+DEVO_POST_IMAGE: bg-1.jpg
 
 * The Sell: 
   
