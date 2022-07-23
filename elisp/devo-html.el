@@ -1,4 +1,4 @@
-(org-export-define-derived-backend '-html 'html
+(org-export-define-derived-backend 'devo-html 'html
   :translate-alist '(
 		     (template . devo-html-template)
 		     (headline . devo/ox-slimhtml-headline)
@@ -35,7 +35,8 @@
 		   (:html-body-attr "HTML_BODY_ATTR" nil "" t)
 		   (:devo-title-headline "DEVO_TITLE_HEADLINE" "devo-title-headline" nil t)
 		   (:devo-title-headline-class "DEVO_TITLE_HEADLINE_CLASS" "devo-title-headline-class" nil space)
-		   (:devo-post-image "DEVO_POST_IMAGE" "devo-post-image" nil t)
+		   (:post-image "POST_IMAGE" "post-image" nil t)
+		   (:description "DESCRIPTION" ":description" nil space)
 		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
 		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
@@ -81,7 +82,8 @@ information."
   ""
   (let ((title (car (plist-get info :title)))
 	(date (plist-get info :date))
-	(devo-post-image (plist-get info :devo-post-image))
+	(post-image (plist-get info :post-image))
+	(description (plist-get info :description))
 	(devo-post-tags (plist-get info :devo-post-tags)))
     (concat
      "<head>\n"
@@ -90,9 +92,13 @@ information."
      "<script src=\"/js/jquery-3.6.0.min.js\"></script>\n"
      (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
      (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
-     (if devo-post-tags (format "<meta property=\"tags\" content=\"%s\">\n" devo-post-tags) "")
+     (if devo-post-tags (format "<meta property=\"og:tags\" content=\"%s\">\n" devo-post-tags) "")
 
-     (if devo-post-image (format "<meta property=\"og:image\" content=\"https://jd-m.github.io/img/%s\"/></n>" devo-post-image) "")
+     (if post-image (format "<meta property=\"og:image\" content=\"https://jd-m.github.io/img/%s\"/></n>" post-image) "")
+
+     (if description (format
+		      "<meta property=\"og:description\" content=\"%s\"/>"
+		      description) "")
      
      "<link rel=\"stylesheet\" href=\"/css/site.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
@@ -116,8 +122,8 @@ information."
      "<div class=\"navbar disappear\">\n"
      "<a href=\"/index.html\">Recent</a>\n"
      "<a href=\"/post-series.html\">Devotionals</a>\n"
-     "<a href=\"/bible-notes.html\">Bible Notes</a>\n"
-     "<a href=\"/bible-memory.html\">Memorise Scripture</a>\n"
+     "<a href=\"/bible-notes.html\">Notes</a>\n"
+     "<a href=\"/bible-memory.html\">Memorise</a>\n"
      "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
      
@@ -138,7 +144,7 @@ information."
 	"<a href=\"/index.html\"><li class=\"indent-2\">Recent</li></a>\n"
 	"<a href=\"/post-series.html\"><li class=\"indent-2\">Devotionals</li></a>\n"
 	"<a href=\"/bible-notes.html\"><li class=\"indent-2\">Bible Notes</li></a>\n"
-	"<a href=\"/bible-memory.html\"><li class=\"indent-2\">Memorise Scripture</li></a>\n"
+	"<a href=\"/bible-memory.html\"><li class=\"indent-2\">Memorise the Bible in Numerous Effortful Steps</li></a>\n"
 	"<a href=\"/about.html\"><li class=\"indent-2\">About</li></a>\n"
 
 	"</ul>\n"
@@ -191,7 +197,6 @@ holding export options."
 	((devo-title-headline (plist-get info :devo-title-headline))
 	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
 	 (devo-share-links (plist-get info :devo-share-links))
-	 (devo-post-image (plist-get info :devo-post-image))
 	 (title (car (plist-get info :title)))
 	 (date (plist-get info :date)))
       (concat
@@ -215,6 +220,7 @@ holding export options."
   "</div>\n")
   ""
   )
+
        contents
        "</div>"
        (devo-html-footer info)

@@ -1,5 +1,4 @@
-#+title: Scripture Notes
+#+title: Bible Notes
 #+OPTIONS: devo-title-headline:t  devo-title-headline-class:heading
 
 
-* 1 John

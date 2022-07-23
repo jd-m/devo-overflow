@@ -8,14 +8,13 @@
   :END:
 
 #+attr_html: :class posts indent-3
-  - [[file:posts/20220719195738.org][/17 July 2022/ One Thing You Lack]]
+  - [[file:posts/20220527172601.org][One Man's Strong City is Another Man's Ruin]]  
+#+begin_comment
   - [[file:posts/20220623212643.org][/23 Jun 2022/ Not as the World Gives]]
-  - [[file:posts/20220527172601.org][/27 May 2022/ One Man's Strong City is Another Man's Ruin]]
-  
+  - [[file:posts/20220719195738.org][/17 July 2022/ One Thing You Lack]]
+#+end_comment
 
 #+begin_export javascript
-
-
         $(".posts a").each(function (i, obj) {
             var a_href = $(this).attr('href');
             
@@ -25,7 +24,6 @@
                 var tags = $(data).filter('meta[property="tags"]').attr("content");
                 var text = $(data).find("p").text().substring(0,250);
                 var html_string = "";          
-
                 
                 html_string = "<a href=\"" + a_href + "\">\n" +
                     "<div class=\"center card\">\n" + 

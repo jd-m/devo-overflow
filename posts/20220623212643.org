@@ -2,7 +2,8 @@
 #+date: 06 May 2022
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DEVO_POST_IMAGE: "bg-1.jpg"
+#+POST_IMAGE: bg-1.jpg
+#+DESCRIPTION: Finding peace in the right place
 
 [[../img/bg-1.jpg]]
 
