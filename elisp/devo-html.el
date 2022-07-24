@@ -214,13 +214,15 @@ holding export options."
 	  "<a class=\"fa fa-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u="
 	  "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"</a>\n"
 	  
-	  "<a class=\"fa fa-twitter\"href=\"https://twitter.com/share?url="
+	  "<a class=\"fa fa-twitter\" href=\"https://twitter.com/share?url="
     "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"></a>\n"
+
     
-  "</div>\n")
+    "<a class=\"fa fa-whatsapp\" href=\"whatsapp://send?text="  "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html" " \" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\"></a>"
+
+    "</div>\n")
   ""
   )
-
        contents
        "</div>"
        (devo-html-footer info)
