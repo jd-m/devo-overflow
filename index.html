@@ -62,31 +62,80 @@ $(".drop-navbar").toggleClass("hide");
 </div>
 </div>
 <div class="col-6 test indent-1 center"><div>
-<div class="posts"><h2 id="posts" class="heading">Recent Posts</h2><ul class="posts indent-3"><li><a href="posts/20220527172601.html">One Man's Strong City is Another Man's Ruin</a></li>
+<div class="posts-3"><h2 id="latest-posts" class="heading">Latest Post</h2><ul class="indent-3"><li><a href="posts/20220527172601.html">One Man's Strong City is Another Man's Ruin</a></li>
 </ul>
 
-<script>        $(".posts a").each(function (i, obj) {
-            var a_href = $(this).attr('href');
-            
-            $.get(a_href, function (data) {
-	            var date = $(data).filter('meta[property="date"]').attr("content");
-	            var post_title = $(data).filter('meta[property="og:title"]').attr("content");
-                var tags = $(data).filter('meta[property="tags"]').attr("content");
-                var text = $(data).find("p").text().substring(0,250);
-                var html_string = "";          
-                
-                html_string = "<a href=\"" + a_href + "\">\n" +
-                    "<div class=\"center card\">\n" + 
-                    "<h4><span>" + post_title + "</span></h4>\n" +
-                    "<span class=\"date\">" + date + " </span>" + 
-                    "<p> " + text + " <span class=\"read-more\"> <em>[Read more...]</em></span>" + "</p>\n" +
-                    "</div>\n" + 
-                    "</a>\n";
-                $("#posts").after(html_string);
-            });
-        });
+<script>$(".posts-3 a").each(function (i, obj) {
+    var a_href = $(this).attr('href');
 
-        $(".posts ul").empty();
+    $.get(a_href, function (data) {
+	var date = $(data).filter('meta[property="date"]').attr("content");
+	var post_title = $(data).filter('meta[property="og:title"]').attr("content");
+	var description = $(data).filter('meta[property="og:description"]').attr("content");
+        var tags = $(data).filter('meta[property="tags"]').attr("content");	
+	var image = $(data).filter('meta[property="og:image"]').attr("content");
+        var text = $(data).find("p:not(blockquote p)").text().substring(0,500);
+        var html_string = "";          
+
+        html_string =
+
+        "<a href=\"" + a_href + "\">\n" +
+        "<div class=\"center card-3\">\n" +
+        "<img src=\"" + image +"\">\n" +
+        "<h4><span>" + post_title + "</span></h4>\n" +
+        "<h4 class=\"post-description\"><span>" + description + "</span></h4>\n" +
+        "<span class=\"date\">" + date + "</span>\n" +
+        "<p class=\"disappear\">" + text + " ... </p>\n" +
+        "<span class=\"read-more disappear\">Read More...</span>" + 
+        "</div>\n" +
+        "</a>\n"
+;
+
+        $("#latest-posts").after(html_string);
+    });
+});
+
+$(".posts-3 ul").empty();
+
+</script>
+</div>
+
+<div class="posts-2"><h2 id="recent-posts" class="heading">Recent Posts</h2><ul class="indent-3"><li><a href="posts/20220527172601.html">One Man's Strong City is Another Man's Ruin</a></li>
+</ul>
+
+<script>$(".posts-2 a").each(function (i, obj) {
+    var a_href = $(this).attr('href');
+
+    $.get(a_href, function (data) {
+	var date = $(data).filter('meta[property="date"]').attr("content");
+	var post_title = $(data).filter('meta[property="og:title"]').attr("content");
+	var description = $(data).filter('meta[property="og:description"]').attr("content");
+        var tags = $(data).filter('meta[property="tags"]').attr("content");	
+	var image = $(data).filter('meta[property="og:image"]').attr("content");
+        var text = $(data).find("p:not(blockquote p)").text().substring(0,250);
+        var html_string = "";          
+
+        html_string =
+	    "<a href=\"" + a_href +  "\">" +
+	    "<div class=\"center card-2\">" +
+	    "<div class=\"card-2-image\">" +
+	    "<img src=\"" + image + "\">" +
+	    "</div>" +
+	    "<div class=\"card-2-info\">" +
+	    "<h4><span>" + post_title + "</span></h4>" +
+	    "<h4 class=\"post-description\"><span>" + description + "</span></h4>" +
+	    "<span class=\"date\">" + date + "</span>" +
+	    "<p class=\"disappear\">" + text + "</p>" +
+	    "<span class=\"read-more disappear\">Read More...</span>" +
+	    "</div>" +
+	    "</div>" +
+	    "</a>";
+
+        $("#recent-posts").after(html_string);
+    });
+});
+
+$(".posts-2 ul").empty();
 
 </script>
 </div>
