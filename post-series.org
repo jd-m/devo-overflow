@@ -1,7 +1,9 @@
-#+title: Collections
-#+OPTIONS: devo-title-headline:t  devo-title-headline-class:heading
+#+title: Devotionals
+#+OPTIONS: devo-title-headline:nil  devo-title-headline-class:heading
 
-* Devotionals
+/Working on it./
+
+* COMMENT Devotionals
    :PROPERTIES:
    :attr_html: :class list-heading
    :END:
@@ -9,11 +11,6 @@
 #  - 23 June 2022 [[file:posts/20220623212643.org][Not as the World Gives]]
   - 23 July 2022 [[file:posts/20220527172601.org][One Man's City is Another Man's Ruin]]
     
-* COMMENT Who do you say that I am?
-  :PROPERTIES:
-  :CUSTOM_ID: 20220602191235
-  :END:
-
 * COMMENT [[file:teach-like-a-christian.org][Teach Like A Christian]]
   :PROPERTIES:
   :attr_html: :class posts list-heading
