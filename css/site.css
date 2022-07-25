@@ -339,11 +339,10 @@ div.card-2 {
 
 .card-2-image {
     float: right;
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    height: 100%;
     padding: 0px 0px;
     margin: 0px;
-    
 }
 
 .card-2 img {
