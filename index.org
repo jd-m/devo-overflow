@@ -76,7 +76,7 @@ var a_href = $(this).attr('href');
 	    "<div class=\"card-2-info\">" +
 	    "<h2><span>" + post_title + "</span></h2>" +
 "<span class=\"date\">" + date + "</span>" +	    
-"<h3 class=\"post-description \"><span>" + description + "</span></h3>" +
+"<h3 class=\"post-description disappear\"><span>" + description + "</span></h3>" +
 	    
 	    "<p class=\"disappear\">" + text + "</p>" +
 	    "<span class=\"read-more disappear\">Read More...</span>" +
