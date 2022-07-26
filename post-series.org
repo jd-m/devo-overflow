@@ -10,7 +10,7 @@
   #+attr_html: :class posts indent-2
 #  - 23 June 2022 [[file:posts/20220623212643.org][Not as the World Gives]]
   - 23 July 2022 [[file:posts/20220527172601.org][One Man's City is Another Man's Ruin]]
-    
+  - 30 July 2022 [[file:posts/20220719195738.org][One Thing You Lack]]
 * COMMENT [[file:teach-like-a-christian.org][Teach Like A Christian]]
   :PROPERTIES:
   :attr_html: :class posts list-heading

@@ -38,6 +38,7 @@
 		   (:post-image "POST_IMAGE" "post-image" nil t)
 		   (:description "DESCRIPTION" ":description" nil space)
 		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
+		   (:post-class "POST_CLASS" "post-class" nil space)
 		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
 		   )
@@ -105,9 +106,7 @@ information."
      "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/>"
      "</head>\n"
 
-
      "<div class=\"header col-12 test\">\n"
-
      "<a href=\"/index.html\">\n"
      "<div class=\"logo indent-1\">\n"
      "<h1>Devo_Overflow</h1>\n"
@@ -141,11 +140,11 @@ information."
 	"</div>\n"
 	"<div class=\"drop-navbar hide\">\n"
 	"<ul>\n"
-	"<a href=\"/index.html\"><li class=\"indent-2\">Recent</li></a>\n"
-	"<a href=\"/post-series.html\"><li class=\"indent-2\">Devotionals</li></a>\n"
-	"<a href=\"/bible-notes.html\"><li class=\"indent-2\">Bible Notes</li></a>\n"
-	"<a href=\"/bible-memory.html\"><li class=\"indent-2\">Memorise the Bible in Numerous Effortful Steps</li></a>\n"
-	"<a href=\"/about.html\"><li class=\"indent-2\">About</li></a>\n"
+	"<a href=\"/index.html\"><li class=\"indent-3\">Recent</li></a>\n"
+	"<a href=\"/post-series.html\"><li class=\"indent-3\">Devotionals</li></a>\n"
+	"<a href=\"/bible-notes.html\"><li class=\"indent-3\">Bible Notes</li></a>\n"
+	"<a href=\"/bible-memory.html\"><li class=\"indent-3\">Memorise the Bible in Numerous Effortful Steps</li></a>\n"
+	"<a href=\"/about.html\"><li class=\"indent-3\">About</li></a>\n"
 
 	"</ul>\n"
 	"</div>\n"
@@ -197,12 +196,13 @@ holding export options."
 	((devo-title-headline (plist-get info :devo-title-headline))
 	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
 	 (devo-share-links (plist-get info :devo-share-links))
+	 (post-class (plist-get info :post-class))
 	 (title (car (plist-get info :title)))
 	 (date (plist-get info :date)))
       (concat
        (devo-html-header info)     
 
-       "<div class=\"col-6 test indent-1 center\">"
+       "<div class=\"col-6 indent-3" (if post-class (format " %s " post-class) " ") "center\">"
        (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
        (if date
 	   (format "<span class=\"date\">%s</span>\n\n"  (format "%s" (plist-get info :date))) "")
