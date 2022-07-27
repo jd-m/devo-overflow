@@ -32,7 +32,7 @@ $(".posts-3 a").each(function (i, obj) {
         "<h2>" + post_title + "</h2>\n" +
         "<span class=\"date\">" + date + "</span>\n" +
         "<h3 class=\"post-description\"><span>" + description + "</span></h3>\n" +
-        "<p class=\"disappear\">" + snippet + " ... </p>\n" +
+        "<p class=\"disappear\">" + snippet + "</p>\n" +
         "<div class=\"read-more\">READ POST</div>\n" +
         "</div>\n" +
         "</a>\n" 
@@ -77,7 +77,7 @@ var html_string = "";
     "<h2>" + post_title + "</h2>" +
     "<span class=\"date\">" + date + "</span>" +
     "<h3 class=\"post-description\"><span>" + description + "</span></h3>" +
-    "<p class=\"\">" + snippet + " ...</p>" +
+    "<p class=\"\">" + snippet + "</p>" +
     "<div class=\"read-more\">READ POST</div>\n" +
     "</a>" +
     "<hr>" +

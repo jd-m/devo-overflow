@@ -140,10 +140,10 @@ information."
      "</a>\n"
      
      "<div class=\"navbar disappear\">\n"
-     "<a href=\"/index.html\">posts</a>\n"
+     "<a href=\"/index.html\">Posts</a>\n"
      ;"<a href=\"/post-series.html\">Devotionals</a>\n"
-     "<a href=\"/bible-notes.html\">Notes</a>\n"
-     "<a href=\"/bible-memory.html\">Memorise</a>\n"
+     "<a href=\"/bible-notes.html\">Studies</a>\n"
+     "<a href=\"/bible-memory.html\">Memorise Scripture</a>\n"
      "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
      
