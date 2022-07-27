@@ -135,6 +135,7 @@ ul {
     display: block;
     height: auto;
     float: left;
+    margin-left: 16px;
 }
 
 .logo h1 {
@@ -147,6 +148,7 @@ ul {
 .logo hr {
     margin-top: 1px;
     margin-bottom: 2px;
+
     float: left;
     clear: both;
 }
@@ -297,7 +299,7 @@ blockquote {
     width: 100%;
     float: left;
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19); */
-    margin: 0px 0px 0px;                  
+    margin: 0px 8px 0px;                  
 }
 
 .card-2:hover {
@@ -313,7 +315,7 @@ blockquote {
 }
 
 .card-2 .date {
-    padding: 16px08px;
+    padding: 16px 8px;
 }
 
 .card-2 p {
@@ -367,33 +369,29 @@ blockquote {
 
 .card-3 h2 {
     font-size: 24px;
-    margin: 32px 0px 0px;
-    padding: 0px 40px; 
+    margin: 24px 0px 0px;
+    padding: 0px 32px; 
     font-family: Raleway;
 }
 
 .card-3 .date {
     margin: 8px 0px;
-    padding: 0px 40px;
+    padding: 0px 32px;
 }
 
 .card-3 .post-description {
     margin: 8px 0px;
-    padding: 0px 40px;
+    padding: 0px 32px;
 }
 
 .card-3 p {
     font-size: 16px;
     line-height: 1.5;
-    height: 150px;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: "..."
 }
 
 .card-3 .read-more {
     
-    margin: 32px 64px;
+    margin: 32px 56px;
 }
 
 
@@ -455,6 +453,7 @@ blockquote {
 
     .card-2 {
 	height: auto;
+	padding: 0px 16px;
     }
     
     .card-2 .post-image {
@@ -474,7 +473,7 @@ blockquote {
     .card-2 h2 {
         font-size: 22px;
         font-weight: bold;
-        padding: 8px 16px 0px;
+        padding: 8px 0px 0px;
         margin: 0px;
         font-family: Raleway;
     }
@@ -485,23 +484,24 @@ blockquote {
 
     .card-2 p {
         overflow: hidden;
-        padding: 8px 16px;
+        padding: 8px 0px;
     }
 
 
     .card-2 .post-description {
-        padding: 0px 16px;
+        padding: 0px 0px;
         display: none;
     }
 
     .card-2 .read-more {
         width: 100%;
         margin: 0px;
+	
     }
 
     .card-2 hr {
         width: 100%;
-        margin: 16px 16px;
+        margin: 16px 0px;
     }
 
 

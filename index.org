@@ -18,6 +18,7 @@ $(".posts-3 a").each(function (i, obj) {
 	var date = $(data).filter('meta[property="date"]').attr("content");
 	var post_title = $(data).filter('meta[property="og:title"]').attr("content");
 	var description = $(data).filter('meta[property="og:description"]').attr("content");
+    var snippet = $(data).filter('meta[property="snippet"]').attr("content");
         var tags = $(data).filter('meta[property="tags"]').attr("content");	
 	var image = $(data).filter('meta[property="og:image"]').attr("content");
         var text = $(data).find("p:not(blockquote p)").text().substring(0,500);
@@ -31,11 +32,10 @@ $(".posts-3 a").each(function (i, obj) {
         "<h2>" + post_title + "</h2>\n" +
         "<span class=\"date\">" + date + "</span>\n" +
         "<h3 class=\"post-description\"><span>" + description + "</span></h3>\n" +
-        "<p class=\"disappear\">" + text + " ... </p>\n" +
+        "<p class=\"disappear\">" + snippet + " ... </p>\n" +
         "<div class=\"read-more\">READ POST</div>\n" +
         "</div>\n" +
         "</a>\n" 
-
         
         $("#latest-posts").after(html_string);
     });
@@ -58,33 +58,34 @@ $(".posts-3 ul").empty();
 #+begin_export javascript
 $(".posts-2 a").each(function (i, obj) {
 var a_href = $(this).attr('href');
-    
-    $.get(a_href, function (data) {
-	var date = $(data).filter('meta[property="date"]').attr("content");
-	var post_title = $(data).filter('meta[property="og:title"]').attr("content");
-	var description = $(data).filter('meta[property="og:description"]').attr("content");
-        var tags = $(data).filter('meta[property="tags"]').attr("content");	
-	    var image = $(data).filter('meta[property="og:image"]').attr("content");
-        var text = $(data).find("p:not(blockquote p)").text().substring(0,250);
-        var html_string = "";          
 
-        html_string =
-        
-	    "<div class=\"center card-2\">" +
-        "<a href=\"" + a_href +  "\">" +
-	    "<img class=\"post-image\"  src=\"" + image + "\">" +
-	    "<h2>" + post_title + "</h2>" +
-        "<span class=\"date\">" + date + "</span>" +
-        "<h3 class=\"post-description\"><span>" + description + "</span></h3>" +
-	    "<p class=\"\">" + text + " ...</p>" +
-        "<div class=\"read-more\">READ POST</div>\n" +
-        "</a>" +
-        "<hr>" +
-        "</div>";
+$.get(a_href, function (data) {
+var date = $(data).filter('meta[property="date"]').attr("content");
+var post_title = $(data).filter('meta[property="og:title"]').attr("content");
+var description = $(data).filter('meta[property="og:description"]').attr("content");
+var snippet = $(data).filter('meta[property="snippet"]').attr("content");
+var tags = $(data).filter('meta[property="tags"]').attr("content");	
+var image = $(data).filter('meta[property="og:image"]').attr("content");
+var text = $(data).find("p:not(blockquote p)").text().substring(0,250);
+var html_string = "";          
+
+    html_string =
+
+    "<div class=\"center card-2\">" +
+    "<a href=\"" + a_href +  "\">" +
+    "<img class=\"post-image\"  src=\"" + image + "\">" +
+    "<h2>" + post_title + "</h2>" +
+    "<span class=\"date\">" + date + "</span>" +
+    "<h3 class=\"post-description\"><span>" + description + "</span></h3>" +
+    "<p class=\"\">" + snippet + " ...</p>" +
+    "<div class=\"read-more\">READ POST</div>\n" +
+    "</a>" +
+    "<hr>" +
+    "</div>";
 
 
-        $("#recent-posts").after(html_string);
-    });
+    $("#recent-posts").after(html_string);
+});
 });
 
 $(".posts-2 ul").empty();

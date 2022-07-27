@@ -35,10 +35,13 @@
 		   (:html-body-attr "HTML_BODY_ATTR" nil "" t)
 		   (:devo-title-headline "DEVO_TITLE_HEADLINE" "devo-title-headline" nil t)
 		   (:devo-title-headline-class "DEVO_TITLE_HEADLINE_CLASS" "devo-title-headline-class" nil space)
-		   (:post-image "POST_IMAGE" "post-image" nil t)
-		   (:description "DESCRIPTION" ":description" nil space)
-		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
 		   (:post-class "POST_CLASS" "post-class" nil space)
+		   
+		   (:post-image "POST_IMAGE" "post-image" nil t)
+		   (:post-type "POST_TYPE" "post-type" nil t)
+		   (:description "DESCRIPTION" ":description" nil space)
+		   (:snippet "SNIPPET" ":snippet" nil space)
+		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
 		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
 		   )
@@ -84,22 +87,40 @@ information."
   (let ((title (car (plist-get info :title)))
 	(date (plist-get info :date))
 	(post-image (plist-get info :post-image))
+	(post-type (plist-get info :post-type))
 	(description (plist-get info :description))
+	(snippet (plist-get info :snippet))
 	(devo-post-tags (plist-get info :devo-post-tags)))
     (concat
      "<head>\n"
-     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
-     
+     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"    
      "<script src=\"/js/jquery-3.6.0.min.js\"></script>\n"
+     ;site-name
+     "<meta property=\"og:site_name\" content=\"Devo Overflow\">"
+     
+     ;title
      (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
-     (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
-     (if devo-post-tags (format "<meta property=\"og:tags\" content=\"%s\">\n" devo-post-tags) "")
-
+     
+     ;type
+     (if post-type (format "<meta property=\"og:type\" content=\"%s\"/>\n" post-type) "")
+     
+     ;url
+     (format "<meta property=\"og:url\" content=\"%s\"/>\n"  (concat "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html" ))
+     
+     ;image
      (if post-image (format "<meta property=\"og:image\" content=\"https://jd-m.github.io/img/%s\"/></n>" post-image) "")
+
+     (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
+
+     (if devo-post-tags (format "<meta property=\"og:tags\" content=\"%s\">\n" devo-post-tags) "")
 
      (if description (format
 		      "<meta property=\"og:description\" content=\"%s\"/>"
 		      description) "")
+
+     (if snippet (format
+		      "<meta property=\"snippet\" content=\"%s\"/>"
+		      snippet) "")
      
      "<link rel=\"stylesheet\" href=\"/css/site.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
