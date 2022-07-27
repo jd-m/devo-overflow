@@ -3,7 +3,7 @@
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
 #+POST_CLASS: article
-#+DESCRIPTION: Two views into the mind of a person relying on wealth for security.
+#+DESCRIPTION: Relying on wealth for security - from the perspective of a 'have' and 'have not'
 #+SNIPPET: On the surface this verse seems to say what a lot of people would see as a basic fact: being rich makes you secure because it means whatever you need you can get it. But is that all scripture is really saying?
 #+POST_IMAGE: ruin-7.jpg
 
