@@ -72,7 +72,8 @@ $(".drop-navbar").toggleClass("hide");
 	var post_title = $(data).filter('meta[property="og:title"]').attr("content");
 	var description = $(data).filter('meta[property="og:description"]').attr("content");
     var snippet = $(data).filter('meta[property="snippet"]').attr("content");
-        var tags = $(data).filter('meta[property="tags"]').attr("content");	
+        var tags = $(data).filter('meta[property="tags"]').attr("content");
+var post_type = $(data).filter('meta[property="post_type"]').attr("content");
 	var image = $(data).filter('meta[property="og:image"]').attr("content");
         var text = $(data).find("p:not(blockquote p)").text().substring(0,500);
         var html_string = "";          
@@ -81,6 +82,7 @@ $(".drop-navbar").toggleClass("hide");
 
         "<a href=\"" + a_href + "\">\n" +
         "<div class=\"center card-3\">\n" +
+        "<span class=\"post-type\">" + post_type + "</span>" +
         "<img class=\"post-image\" src=\"" + image +"\">\n" +
         "<h2>" + post_title + "</h2>\n" +
         "<span class=\"date\">" + date + "</span>\n" +
@@ -112,6 +114,7 @@ var description = $(data).filter('meta[property="og:description"]').attr("conten
 var snippet = $(data).filter('meta[property="snippet"]').attr("content");
 var tags = $(data).filter('meta[property="tags"]').attr("content");	
 var image = $(data).filter('meta[property="og:image"]').attr("content");
+var post_type = $(data).filter('meta[property="post_type"]').attr("content");
 var text = $(data).find("p:not(blockquote p)").text().substring(0,250);
 var html_string = "";          
 
@@ -122,6 +125,7 @@ var html_string = "";
     "<img class=\"post-image\"  src=\"" + image + "\">" +
     "<h2>" + post_title + "</h2>" +
     "<span class=\"date\">" + date + "</span>" +
+    "<span class=\"post-type\">" + post_type + "</span>" +
     "<h3 class=\"post-description\"><span>" + description + "</span></h3>" +
     "<p class=\"\">" + snippet + "</p>" +
     "<div class=\"read-more\">READ POST</div>\n" +

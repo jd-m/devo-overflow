@@ -292,6 +292,17 @@ blockquote {
     margin: 16px 0px 0px;
 }
 
+.post-type {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: darkcyan;
+    padding: 2px 4px;
+}
+
+
+
 /* Card 2 */
 
 .card-2 {
@@ -347,6 +358,9 @@ blockquote {
     margin: 16px 0px 8px;
 }
 
+
+
+
 /* Card 3 */
 
 .card-3 {
@@ -394,6 +408,12 @@ blockquote {
     margin: 32px 56px;
 }
 
+
+.card-3 .post-type {
+    position: absolute;
+    padding: 2px 8px;
+    font-size: 14px;
+}
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -479,7 +499,7 @@ blockquote {
     }
 
     .card-2 .date {
-        padding: 16px 16px;
+        padding: 16px 0px;
     }
 
     .card-2 p {

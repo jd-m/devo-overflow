@@ -1,11 +1,12 @@
 #+title: One Man's City is Another Man's Ruin
 #+date: 23 July 2022
 #+POST_IMAGE: ruin-7.jpg
-#+POST_TYPE: article
+#+PAGE_TYPE: article
+#+POST_TYPE: Devotional
 #+POST_CLASS: article
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DESCRIPTION: Relying on wealth for security - the perspective of a 'have' and 'have not'
+#+DESCRIPTION: Relying on wealth for security - the point of view of a 'have' and 'have not'
 #+SNIPPET: On the surface this verse seems to say what a lot of people would see as a basic fact: being rich makes you secure because it means whatever you need you can get it. But is that all scripture is really saying?
 
 

@@ -38,6 +38,7 @@
 		   (:post-class "POST_CLASS" "post-class" nil space)
 		   
 		   (:post-image "POST_IMAGE" "post-image" nil t)
+		   (:page-type "PAGE_TYPE" "page-type" nil t)
 		   (:post-type "POST_TYPE" "post-type" nil t)
 		   (:description "DESCRIPTION" ":description" nil space)
 		   (:snippet "SNIPPET" ":snippet" nil space)
@@ -87,6 +88,7 @@ information."
   (let ((title (car (plist-get info :title)))
 	(date (plist-get info :date))
 	(post-image (plist-get info :post-image))
+	(page-type (plist-get info :page-type))
 	(post-type (plist-get info :post-type))
 	(description (plist-get info :description))
 	(snippet (plist-get info :snippet))
@@ -102,7 +104,10 @@ information."
      (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
      
      ;type
-     (if post-type (format "<meta property=\"og:type\" content=\"%s\"/>\n" post-type) "")
+     (if page-type (format "<meta property=\"og:type\" content=\"%s\"/>\n" page-type) "")
+
+     ;type
+     (if post-type (format "<meta property=\"post_type\" content=\"%s\"/>\n" post-type) "")
      
      ;url
      (format "<meta property=\"og:url\" content=\"%s\"/>\n"  (concat "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html" ))
