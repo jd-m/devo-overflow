@@ -358,7 +358,11 @@ blockquote {
     margin: 16px 0px 8px;
 }
 
-
+.card-2 .post-type {
+    background: white;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+}
 
 
 /* Card 3 */

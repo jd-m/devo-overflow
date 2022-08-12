@@ -8,11 +8,7 @@
   :END:
 
 #+attr_html: :class indent-3
-- [[file:posts/20220527172601.org][One Man's Strong City is Another Man's Ruin]]
-
-#+begin_comment
- [[file:posts/20220719195738.org][One Thing You Lack]]
-#+end_comment
+ - [[file:posts/20220719195738.org][One Thing You Lack]]
 
 #+begin_export javascript
 $(".posts-3 a").each(function (i, obj) {

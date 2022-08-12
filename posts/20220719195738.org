@@ -2,66 +2,86 @@
 #+date: 20 July 2022
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+POST_IMAGE: burning-money.jpg
-#+DESCRIPTION: When Jesus calls us to lose it is always for greater gain
+#+POST_IMAGE: one-thing-2.jpg
+#+DESCRIPTION: 5 things to remember when called to give things up
 
-#+POST_TYPE: article
+#+POST_TYPE: Devotional
+#+PAGE_TYPE: article
 #+POST_CLASS: article
 
 #+SNIPPET: Jesus cuts straight through reveals to him and to us what is going on in his heart. He calls the man to give up his possessions and follow Him, and his reluctance to do it shows what was really most important him.
 
 
-[[file:../img/burning-money.jpg]]
+[[file:../img/one-thing-2.jpg]]
 
 #+begin_quote
-21 And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.”
+21 And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.
+[22] Disheartened by the saying, he went away sorrowful, for he had great possessions.
 #+end_quote
 
-* Outline
 
-** Intro
-   - Having to give up things we like is not fun.
-   - Especially if we need to give them up immediately.
-   - Unless we are doing it for something better.
-   - Example: Gluten intolerant giving up bread is going to mean my health is better.
-   - Similiarly, Jesus calls us to get rid of things in our lives for the sake of our soul.
-   - It is important to keep in mind that whatever he calls us to lose, it is because he wants us to have something better.
+* When Jesus calls us to lose
+  No one enjoys giving up things they like. But there are times when the things we have keep us from having something more imporant. If I pay over a grand each month for my Tesla Model X, and that means I can't afford my rent or bills, obviously I've got my priorities wrong. I may like my model X but its not more important than having a place to live. Similarly there may be things in our lives which we give more focus than we should, and when that happens Jesus may call us to let it go, just as did to the rich young man ($ref).
+
+   The story begins with a rich young man approaching Jesus asking him what he needs to do to inherit eternal life. This man is confident, and to be fair to him his record is pretty clean. He has no obvious sins you could pick out. But his problem is not so much what he's done as what he has. To show this Jesus' gives a surprising response that catches him off guard and blows a hole in his self-righteousness to show him where his heart really is.
+
+
+   The story of this rich man is the story of most of us at some point in our lives. But it is a reminder that while giving things up can be hard, Jesus has good purposes in calling us to do it. Here are 5 things Jesus' answer to the rich young man teaches us to keep in mind whenever he calls us to leave something behind.
+* 5 things to remember
+
+** 1. Jesus commands intentionally
+                                                                                                                     
+   Firstly, Jesus looks at him. He speaks to his man based on who he is. Jesus does not give this man a one-size-fits-all answer to his question. We know self-appointed counsellors who give advice without even really listening or understanding the situation. Jesus doesn't do that. He gives an answer that is unique to him, and to us.
+    
+   Why does that matter? If we feel like Jesus throws out commands at random, we may feel like he has not really thought about us and that he does not realise how hard it is to do what he is asking us to. But if we know Jesus considers as individuals, knowing our unique experiences and struggles, then we can be confident that what he calls us to do will be meaning full to us. Even if it seems difficult, we can be sure that it just the thing we need.
+
+** 2. He does it out of love
+
+   #+begin_quote
+   And Jesus, looking at him, loved him, 
+   #+end_quote
+
+   Secondly, the commands Jesus gives, he gives in love. When he calls us to give up things we like, or things we were not expecting to have to, it may not feel that way, but Jesus is willing to tell us to do hard things in love. 
+
+** 3. He wants us to gain
+
+   #+begin_quote
+   "You lack one thing"
+   #+end_quote
+    
+   Thirdly, when called to lose we see things differently than Jesus.  We often focus on what we have and are afraid of losing, but Jesus is looking what we lack and what we have to gain. He does not say to the man that there is one thing he has and needs to lose, but that there is one thing he lacks that he needs to gain. Jesus is focused on our gain, not our loss.
+
+   This man's real problem was not that he had too much but that he did not have enough. He had money and posessions, but he did not have love for God. What he had was getting in the way of him getting what he needed. His heart was set on his earthly treasure (Mt 7:21). His riches were robbing him of love for God.
+
+
+** 4. He wants better for us than what we have
+
+   #+begin_quote
+   treasure in heaven;
+   #+end_quote
+
+   Jesus tells him to let go of what is stealing from him so that he can be rich in what matters. He does not want us to lose out. He wants us to have something /better/, "treasure in heaven". Too often we can't see past the appeal of earthly treasure so we settle. Jesus does not want this man to settle for less when knows he could have a better treasure in heaven. Even the best and the most valuable things we will eventually fade, lose their appeal, and drop in value. But Jesus offers us a to trade earthly treasure for treasure in heaven, that can't be damaged, can't be spoiled and will never lose value.
+
+** 5. The thing we want to lose the least may be the thing we need to give up the most.
+   #+begin_quote
+   Disheartened by the saying, he went away sorrowful, for he had great possessions.
+   #+end_quote
+
+   This was not how this man thought the conversation would go. Jesus tells him what he needs to do and his heart sinks. He is brought to a moment of crisis and the tragic end shows that he loved his possessions so much that he would not give them up even if it cost him eternal life.
+
+   When Jesus tells us things to drop things we don't care about, it's easy. When he tells us to drop things obviously harmful, that's fine too. But when it comes that thing what we love, that is a different story. That is when we will see where we draw the boundaries of our commitment.
+    
+   The principle is simple: the more we love something the more it hurts to lose it. But if we love something more than God, then the thing which hurts the most to lose is the thing we need to lose the most. So we should not be surprised if the thing we are most afraid of losing is the very thing Jesus calls us to put out of our lives.
+
+
+    
    
-** 5 things
-   - 5 things to keep in mind when we recognise Jesus calling us to give something up:
-     - He is intentional
-     - He does it out of love
-     - He wants us to gain
-     - He wants better for us
-     - The thing we want to lose the least may be the thing we need to give up the most.
 
-** Closing
-   - 
-* Notes
-This is Jesus' response rich man who was confident in his own righteousness and asks what he must do to inherit eternal life.
 
-Jesus cuts straight through reveals to him and to us what is going on in his heart. He calls the man to give up his possessions and follow Him, and his reluctance to do it shows what was really most important him.
 
-As believers there will be things Jesus calls us to leave behind so we can have better walk with God.
 
-A few things to keep in mind when Jesus calls us to give things up:
-
-- He is intentional
-- He does it out of love
-- He wants us to gain
-- He wants better for us
-- The thing we want to lose the least may be the thing we need to give up the most.
-
-/He looked at him/ - Jesus response to this man with intent. Jesus was listening to what this man ws saying so we know his response was not thoughtless but specific to the need of this man.
-
-/He loved him/ When Jesus tells this man to give up what he has it is out of love.
-
-As believers we are called to give things up. Some things it is obvious need to go, but some things actually we would like to hold on to, and we would be worried if we felt like God called us to give it up.
-
-/You lack one thing/ Jesus was looking at what this man lacked and what he wanted him to have, not what he had and wanted him to lose.
-
-- /You will have treasure in heaven/ 
-
-When Jesus calls us to give things up he does not look at what we will lose, but what we will gain.
-
-- Give away the thing you desire most: Jesus picked on the thing that feared losing the most. This was what his heart desired and trusted in more than God, and to prove that Jesus challenges him to give it up.
+-----
+#+begin_export html
+Photo by <a href="https://unsplash.com/@tompumford?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Pumford</a> on <a href="https://unsplash.com/s/photos/disappointed-rich-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+#+end_export
