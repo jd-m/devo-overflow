@@ -1,0 +1,201 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <meta property="og:site_name" content="Devo Overflow"><meta property="og:title" content="Posts"/>
+  <meta property="og:url" content="http://jd-m.github.io/posts/index.html"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <style>
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        float: left;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        
+        border: 1px solid black;
+        border: none;
+        
+    }
+
+    h1, h2, h3, h4 {
+        font-family: Arvo;
+    }
+    
+    body {
+        font-family: Raleway;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .side {
+        min-height: 1px;
+    }
+
+    /* Header */
+
+    .header {
+        margin: 0px 0px 32px;
+    }
+
+    .site-top {
+        text-align: center;
+        margin: 0px 0px 0px;
+    }
+
+    .site-top .site-name {
+        font-family: Arvo;
+        font-size: 32px;
+        margin: 32px auto 0px;
+    }
+
+    .site-top .site-description {
+
+        margin: 0px auto 32px;
+    }
+
+
+    /* Navbar*/
+
+    .navbar {
+        text-align: center;
+        margin: 0px 0px 32px;
+    }
+
+    .navbar a {
+        margin: 0px 24px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar a:hover {
+        color:darkcyan
+    }
+    
+    /* Card-1 */
+    
+    .card-1 {
+        height: auto;
+        width: 100%;
+        float: left;
+        padding: 8px;
+        margin: 8px 0px;
+    }
+
+    .card-1 .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 4px 0px 0px;
+        margin: 0px;
+        font-family: Arvo;
+    }
+
+    .card-1 .card-date {
+        padding: 4px 0px;
+        color: grey;
+    }
+
+    .card-1 .card-description {
+        display: none;
+        overflow: hidden;
+        padding: 4px 0px;
+    }
+
+    .card-1 .card-image {
+    }
+
+    .card-1 .card-text {
+        margin: 4px 0px 16px;
+    }
+
+    .card-1 .card-read-more {
+        width: auto;
+        margin: 0px;
+    }
+
+    .card-1 hr {
+        width: 100%;
+        margin: 16px 0px 8px;
+    }
+    
+    /* Article */
+
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+  </style>
+</head>
+
+<div class="col-3 side"></div>
+
+<div class="col-6">
+  <div class="header">
+    <div class="site-top">
+      <div class="site-name">Journal Overflow</div>
+      <div class="site-description">Slightly longer site descrtiption</div>
+    </div>
+    
+    <div class="navbar">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+
+  <div class="content">
+
+
+      <div class="card-1">
+        <div class="card-title">Post Title</div>
+        <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="card-date">01 June 2022</div>
+
+
+        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa sed lorem varius pulvinar. Integer ut convallis neque. Vivamus nec sagittis purus. Praesent vitae neque non eros lacinia rhoncus. Cras tristique ligula eget erat tempus, sit amet accumsan neque feugiat. Donec dignissim porttitor arcu, ut facilisis dolor accumsan in.</div>
+        <div class="card-read-more">continue reading...</div>
+        <hr>
+      </div>
+    </div>
+
+        <div class="card-1">
+        <div class="card-title">Post Title</div>
+        <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="card-date">01 June 2022</div>
+
+
+        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa sed lorem varius pulvinar. Integer ut convallis neque. Vivamus nec sagittis purus. Praesent vitae neque non eros lacinia rhoncus. Cras tristique ligula eget erat tempus, sit amet accumsan neque feugiat. Donec dignissim porttitor arcu, ut facilisis dolor accumsan in.</div>
+        <div class="card-read-more">continue reading...</div>
+        <hr>
+      </div>
+    </div>
+    
+</div>
+
+<div class="col-3 side"></div>

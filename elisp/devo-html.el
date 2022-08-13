@@ -97,22 +97,22 @@ information."
      "<head>\n"
      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"    
      "<script src=\"/js/jquery-3.6.0.min.js\"></script>\n"
-     ;site-name
+					;site-name
      "<meta property=\"og:site_name\" content=\"Devo Overflow\">"
      
-     ;title
+					;title
      (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
      
-     ;type
+					;type
      (if page-type (format "<meta property=\"og:type\" content=\"%s\"/>\n" page-type) "")
 
-     ;type
+					;type
      (if post-type (format "<meta property=\"post_type\" content=\"%s\"/>\n" post-type) "")
      
-     ;url
+					;url
      (format "<meta property=\"og:url\" content=\"%s\"/>\n"  (concat "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html" ))
      
-     ;image
+					;image
      (if post-image (format "<meta property=\"og:image\" content=\"https://jd-m.github.io/img/%s\"/></n>" post-image) "")
 
      (if date (format "<meta property=\"date\" content=\"%s\"/>\n" (format "%s" (plist-get info :date))) "")
@@ -124,79 +124,52 @@ information."
 		      description) "")
 
      (if snippet (format
-		      "<meta property=\"snippet\" content=\"%s\"/>"
-		      snippet) "")
+		  "<meta property=\"snippet\" content=\"%s\"/>"
+		  snippet) "")
      
-     "<link rel=\"stylesheet\" href=\"/css/site.css\"/>\n"
+     "<link rel=\"stylesheet\" href=\"/css/site-minimal.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
+     "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Arvo\">\n"
      "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/>"
-     "</head>\n"
 
-     "<div class=\"header col-12 test\">\n"
-     "<a href=\"/index.html\">\n"
-     "<div class=\"logo indent-1\">\n"
-     "<h1>Devo_Overflow</h1>\n"
-     "<div class=\"triple-line\">\n"
-     "<hr style=\"width: 100px;\">\n"
-     "<hr style=\"width: 50px;\">\n"
-     "<hr style=\"width: 25px;\">\n"
-     "</div>\n"
-     "</div>\n"
-     "</a>\n"
+     "<div class=\"col-12\">"
      
-     "<div class=\"navbar disappear\">\n"
-     "<a href=\"/index.html\">Posts</a>\n"
-     ;"<a href=\"/post-series.html\">Devotionals</a>\n"
-     "<a href=\"/bible-notes.html\">Studies</a>\n"
-     "<a href=\"/bible-memory.html\">Memorise Scripture</a>\n"
-     "<a href=\"/about.html\">About</a>\n"
-     "</div>\n"
+     "<div class=\"header\">"
      
-     "<div class=\"dropdown-icon appear\" >\n"
-     "<hr style=\"width: 30px\">\n"
-     "<hr style=\"width: 15px\">\n"
-     "<hr style=\"width: 7px\">\n"
-     "</div>\n"
+     "<div class=\"site-top\">"
+     "<a href=\"/index.html\">"
+     "<div class=\"site-name\">Devo Overflow</div>"
+     "</a>"
+     "<div class=\"site-description\">Slightly longer site descrtiption</div>"
+     "</div>"
      
-     "<script>\n"
-     "$(\".dropdown-icon\").click(function(){\n"
-        "$(\".drop-navbar\").toggleClass(\"hide\");\n"
-	"})\n"
-	"</script>\n"
-	"</div>\n"
-	"<div class=\"drop-navbar hide\">\n"
-	"<ul>\n"
-	"<a href=\"/index.html\"><li class=\"indent-3\">Posts</li></a>\n"
-	;"<a href=\"/post-series.html\"><li class=\"indent-3\">Devotionals</li></a>\n"
-	"<a href=\"/bible-notes.html\"><li class=\"indent-3\">Bible Notes</li></a>\n"
-	"<a href=\"/bible-memory.html\"><li class=\"indent-3\">Memorise the Bible in Numerous Effortful Steps</li></a>\n"
-	"<a href=\"/about.html\"><li class=\"indent-3\">About</li></a>\n"
+     "<div class=\"navbar disappear\">"
+     "<a href=\"/index.html\">Posts</a>"
+     "<a href=\"/about.html\">About</a>"
+     "</div>"
 
-	"</ul>\n"
-	"</div>\n"
-	
-	"<div class=\"col-3 side disappear\">\n"
-	
-	"<div class=\"hide\">\n"
-	"<a href=\"/post-series.html\">\n"
-	"<h2>Series</h2>\n"
-	"</a>\n"
-	"<ul id=\"series\">\n"
-	"<li>\n"
-	"<a href=\"/post-series.html#20220602142630\">Wisdom Mine</a>\n"
-	"</li>\n"
-	"<li>\n"
-	"<a href=\"/post-series.html#20220602191239\">Devotionals</a>\n"
-	"</li>\n"
-	"<li>\n"
-	"<a href=\"/post-series.html#20220602191220\">T.L.A.C</a>\n"
-	"</li>\n"
-	"</ul>\n"
-	"</div>\n"
-	"</div>\n"
+     "<div class=\"dropdown-icon appear\" >"
+     "<hr style=\"width: 30px\">"
+     "<hr style=\"width: 15px\">"
+     "<hr style=\"width: 7px\">"
+     "</div>"
 
+     "<script>"
+     "$(\".dropdown-icon\").click(function(){
+          $(\".drop-navbar\").toggleClass(\"hide\");
+      })"
+     "</script>"
+     "</div>"
 
-        
+     "<div class=\"drop-navbar hide\">"
+     "<ul>"
+
+     "<a href=\"/index.html\"><li>Posts</li></a>"
+          "<a href=\"/about.html\"><li>About</li></a>"
+     "</ul>"
+     "</div>"
+     
+     "</div>"
 
      )))
 
@@ -208,51 +181,55 @@ information."
    "<div class=\"footer\" style=\"\">\n"
 
    
-  
-"</div>"
+   
+   "</div>"
    ))
 
-;Templates
+					;Templates
 
 (defun devo-html-template (contents info)
-    "Return complete document string after HTML conversion.
+  "Return complete document string after HTML conversion.
 CONTENTS is the transcoded contents string.  INFO is a plist
 holding export options."
-    (let
-	((devo-title-headline (plist-get info :devo-title-headline))
-	 (devo-title-headline-class (plist-get info :devo-title-headline-class))
-	 (devo-share-links (plist-get info :devo-share-links))
-	 (post-class (plist-get info :post-class))
-	 (title (car (plist-get info :title)))
-	 (date (plist-get info :date)))
-      (concat
-       (devo-html-header info)     
-
-       "<div class=\"col-6 indent-3" (if post-class (format " %s " post-class) " ") "center\">"
-       (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
-       (if date
-	   (format "<span class=\"date\">%s</span>\n\n"  (format "%s" (plist-get info :date))) "")
-
-       (if
-       devo-share-links
-  (concat "<div class=\"share-buttons\">\n"
-
-	  "<a class=\"fa fa-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u="
-	  "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"</a>\n"
-	  
-	  "<a class=\"fa fa-twitter\" href=\"https://twitter.com/share?url="
-    "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html\"></a>\n"
-
+  (let
+      ((devo-title-headline (plist-get info :devo-title-headline))
+       (devo-title-headline-class (plist-get info :devo-title-headline-class))
+       (devo-share-links (plist-get info :devo-share-links))
+       (post-class (plist-get info :post-class))
+       (title (car (plist-get info :title)))
+       (date (plist-get info :date))
+       (post-image (plist-get info :post-image))
+       )
     
-    "<a class=\"fa fa-whatsapp\" href=\"whatsapp://send?text="  "http://jd-m.github.io/posts/" (file-name-base (buffer-file-name)) ".html" " \" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\"></a>"
+    (concat
+     (devo-html-header info)
 
-    "</div>\n")
-  ""
-  )
-       contents
-       "</div>"
-       (devo-html-footer info)
-       )))
+
+     (format "<div class=\"content %s\">" (if post-class (format " %s " post-class) ""))
+
+     "<div class=\"col-6 indent-3 center\">"
+     
+     (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
+     
+     (if date
+	 (format "<div class=\"article-date\">%s</div>\n\n"  (format "%s" (plist-get info :date))) "")
+     
+     "</div>"
+
+     (if post-image (format 
+		     "<div class=\"col-12 article center\">\n
+       <img src=\"/img/%s\"/>\n
+       </div>" post-image) "")
+     
+     "<div class=\"col-6 indent-3 center\">"
+
+     contents
+     
+     "</div>"
+     "</div>"
+     
+     (devo-html-footer info)
+     )))
 
 
 (defun devo-html-publish-to-html (plist filename pub-dir)

@@ -1,0 +1,365 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <meta property="og:site_name" content="Devo Overflow"><meta property="og:title" content="Posts"/>
+  <meta property="og:url" content="http://jd-m.github.io/posts/index.html"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <style>
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        float: left;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+
+
+    }
+
+    h1, h2, h3, h4 {
+        font-family: Arvo;
+        margin: 32px 0px 12px;
+    }
+
+    
+    body {
+        font-family: Raleway;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .content::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .side {
+        min-height: 10px;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .appear {
+        display: block;
+    }
+
+    .hide {
+        display:none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .indent-1 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .indent-2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .indent-3 {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    /* Header */
+
+    .header {
+        float: none;
+        margin: 0px 0px 32px;
+        padding: 16px 32px 0px;
+        height: 32px;
+    }
+
+    .site-top {
+        text-align: center;
+        margin: 0px 0px 0px;
+        width: 75%;
+    }
+
+    .site-top .site-name {
+        
+        float: left;
+        display: inline-block;
+        font-family: Arvo;
+        font-size: 24px;
+    }
+
+    .site-top .site-description {
+        display: none;
+        margin: 0px auto 32px;
+    }
+
+
+    /* Dropdown navbar*/
+
+    .drop-navbar {
+        width: 100%;
+    }
+
+    .drop-navbar ul {
+        
+    }
+
+    .drop-navbar li {
+        font-family: Arvo;
+        padding: 12px 32px;
+        background-color: grey;
+    }
+
+    .drop-navbar a {
+        color: white;
+    }
+
+    .drop-navbar li:hover {
+        color: white;
+        background-color: darkcyan;       
+    }
+
+
+    .dropdown-icon {
+        float: right;
+        margin: 0px;
+
+        padding: 1px 0px 0px;
+        background-color: white;
+        border-radius: 10px;
+        height: 45px;
+        width: 45px;
+        border: 2px solid white;
+    }
+
+    .dropdown-icon hr {
+        border: 1px solid darkcyan;
+        margin: 4px auto;
+    }
+
+
+    /* Navbar*/
+
+    .navbar {
+        float: right;
+    }
+
+    .navbar a {
+        display: inline-block;
+        text-align: center;
+        padding: 2px 24px;
+        margin: 0px 8px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar a:hover {
+        color: darkcyan
+    }
+
+
+
+
+    /* Card-1 */
+    
+    .card-1 {
+        height: auto;
+        width: 100%;
+        float: left;
+        padding: 8px 32px;
+        margin: 8px 0px;
+    }
+
+    .card-1 .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 4px 0px 0px;
+        margin: 0px;
+        font-family: Arvo;
+    }
+
+    .card-1 .card-date {
+        padding: 4px 0px;
+        color: grey;
+    }
+
+    .card-1 .card-description {
+        display: none;
+        overflow: hidden;
+        padding: 4px 0px;
+    }
+
+    .card-1 .card-image {
+    }
+
+    .card-1 .card-text {
+        margin: 4px 0px 16px;
+    }
+
+    .card-1 .card-read-more {
+        width: auto;
+        margin: 0px;
+        text-decoration: underline;
+    }
+
+    .card-1 a:hover {
+        color: darkcyan;
+    }
+
+    .card-1 hr {
+        width: 100%;
+        margin: 16px 0px 8px;
+    }
+    
+    /* Article */
+
+    .heading {
+        border-bottom: 1px solid darkcyan;
+    }
+
+    .article h1 {
+        display: inline-block;
+        font-size: 48px;
+        text-align: center;
+        margin: 32px 0px 32px;
+    }
+    
+    .article .article-date {
+        text-align: center;
+        color: grey;
+        margin: 0px 0px 32px;
+    }
+
+    .article img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        margin: 0px 0px 32px;
+        padding: 0px 0px;
+    }
+
+    .article p {
+        line-height: 1.5;
+    }
+
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        .disappear {
+            display: block;
+        }
+
+        .appear {
+            display: none;
+        }
+
+        /* Header */
+
+        .header {
+        }
+        
+        .site-top .site-name {            
+            float: left;
+            display: inline-block;
+            font-family: Arvo;
+            font-size: 24px;
+        }
+        
+    }
+    
+  </style>
+</head>
+
+<div class="col-12">
+  
+  <div class="header">
+    <div class="site-top">
+      <div class="site-name">Journal Overflow</div>
+      <div class="site-description">Slightly longer site descrtiption</div>
+    </div>
+    
+    <div class="navbar disappear">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+
+    <div class="dropdown-icon appear" >
+      <hr style="width: 30px">
+      <hr style="width: 15px">
+      <hr style="width: 7px">
+    </div>
+
+    <script>
+      $(".dropdown-icon").click(function(){
+          $(".drop-navbar").toggleClass("hide");
+      })
+    </script>
+  </div>
+
+  <div class="drop-navbar ">
+    <ul>
+      <a href="/about.html"><li>About</li></a>
+      <a href="/index.html"><li>Posts</li></a>
+    </ul>
+  </div>
+  
+</div>
+
+
+<div class="article content">
+
+  <div class="col-6 indent-3 center">
+    <h1 class="article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <div class="article-date">01 Jan 2022</div>
+  </div>
+  
+  <div class="col-12 article center">
+    <img src="./img/bg-2.jpg"/>
+  </div>
+  
+  <div class="col-6 indent-3 center">
+    <h2>Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa sed lorem varius pulvinar. Integer ut convallis neque. Vivamus nec sagittis purus. Praesent vitae neque non eros lacinia rhoncus. Cras tristique ligula eget erat tempus, sit amet accumsan neque feugiat. Donec dignissim porttitor arcu, ut facilisis dolor accumsan in. Quisque lobortis neque ut eros posuere tincidunt. Maecenas sit amet efficitur odio. Etiam at lacus urna. Proin metus quam, consequat ac eleifend eget, tincidunt nec nisi. Vivamus euismod sollicitudin maximus. Donec feugiat risus a dignissim accumsan.</p>
+
+      <h2>Heading 2</h2>
+    <p>
+      Nulla condimentum a lorem scelerisque tempor. Praesent accumsan venenatis turpis, id viverra nibh pharetra ac. Fusce ullamcorper sagittis risus id dapibus. Pellentesque volutpat convallis egestas. Nunc vulputate nisi sed arcu fermentum aliquam. Duis viverra arcu turpis, vitae facilisis tellus faucibus finibus. Etiam auctor faucibus nisi in euismod. Fusce fringilla congue blandit. Praesent interdum a arcu non faucibus.</p>
+    <h3>Heading 3</h3>
+    <p>Aliquam non magna nisi. Sed iaculis efficitur tortor ut luctus. Nunc sit amet magna a lacus iaculis auctor ut non felis. Nulla vel iaculis libero. Duis consectetur condimentum tempus. Vestibulum sollicitudin metus sed nunc malesuada accumsan. Sed ultrices est in erat sagittis placerat. Integer pharetra lobortis enim, ac vulputate metus tincidunt sed.</p>
+    <h3>Heading 3</h3>
+    <p>Maecenas vitae ultricies lectus. Duis non leo ullamcorper, finibus enim sit amet, iaculis felis. Nunc nec massa at elit sollicitudin elementum id semper augue. Suspendisse sagittis erat vitae nunc mattis, at gravida nisi faucibus. Etiam sit amet blandit turpis, nec congue nunc. Maecenas nec mauris interdum, convallis nulla quis, maximus enim. Suspendisse convallis ultrices libero, ut finibus mauris lobortis eget. Quisque id magna eu dui aliquet pharetra. Phasellus aliquet ullamcorper nunc, vel varius orci vulputate eget. Sed nulla mi, accumsan sit amet ullamcorper vitae, pharetra vitae eros.
+    </p>
+
+  </div>
+</div>
+
