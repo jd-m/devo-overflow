@@ -163,9 +163,11 @@ information."
 
      "<div class=\"drop-navbar hide\">"
      "<ul>"
-
+     "<hr>"
      "<a href=\"/index.html\"><li>Posts</li></a>"
-          "<a href=\"/about.html\"><li>About</li></a>"
+     "<hr>"
+     "<a href=\"/about.html\"><li>About</li></a>"
+     "<hr>"
      "</ul>"
      "</div>"
      

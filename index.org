@@ -49,7 +49,7 @@
 
 * Recent Posts
   :PROPERTIES:
-  :attr_html: :id recent-posts :class heading invisible
+  :attr_html: :id recent-posts :class heading hide
   :html_container: div
   :html_container_class: posts-2
   :END:
