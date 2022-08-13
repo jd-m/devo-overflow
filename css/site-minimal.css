@@ -80,7 +80,7 @@
     .header {
         margin: 0px 0px 32px;
         padding: 16px 32px 0px;
-        height: 40px;
+        height: 32px;
     }
 
     .site-top {
@@ -95,9 +95,9 @@
         display: inline-block;
         font-family: Arvo;
         font-size: 24px;
-
-	text-decoration: underline;
-	text-decoration-color: darkcyan;
+	color: black;
+/*	text-decoration: underline;
+	text-decoration-color: darkcyan; */
     }
 
     .site-top .site-description {
@@ -140,16 +140,16 @@
         float: right;
         margin: 0px;
 
-        padding: 1px 0px 0px;
+        padding: 3px 0px 0px;
         background-color: white;
         border-radius: 10px;
-        height: 45px;
-        width: 45px;
-        border: 2px solid white;
+        height: 32px;
+        width: 32px;
+        border: 0px solid white;
     }
 
     .dropdown-icon hr {
-        border: 1px solid darkcyan;
+        border: 1px solid black;
         margin: 4px auto;
     }
 

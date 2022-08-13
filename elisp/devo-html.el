@@ -150,8 +150,8 @@ information."
 
      "<div class=\"dropdown-icon appear\" >"
      "<hr style=\"width: 30px\">"
-     "<hr style=\"width: 15px\">"
-     "<hr style=\"width: 7px\">"
+     "<hr style=\"width: 30px\">"
+     "<hr style=\"width: 30px\">"
      "</div>"
 
      "<script>"
@@ -214,7 +214,8 @@ holding export options."
      (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
      
      (if date
-	 (format "<div class=\"article-date\">%s</div>\n\n"  (format "%s" (plist-get info :date))) "")
+	 (format "<div class=\"article-date\">%s</div>\n\n"
+		 (format "%s" (plist-get info :date))) "")
      
      "</div>"
 
