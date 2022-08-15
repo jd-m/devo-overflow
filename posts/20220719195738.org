@@ -4,6 +4,7 @@
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
 #+POST_IMAGE: one-thing-2.jpg
 #+DESCRIPTION: 5 things to remember when called to give things up
+
 #+POST_TYPE: Devotional
 #+PAGE_TYPE: article
 #+POST_CLASS: article
@@ -11,9 +12,11 @@
 
 
 #+begin_quote
-21 And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.
-[22] Disheartened by the saying, he went away sorrowful, for he had great possessions.
+Mark 11:21-22
+
+And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. Disheartened by the saying, he went away sorrowful, for he had great possessions.
 #+end_quote
+
 
 
 * When Jesus calls us to lose
@@ -26,7 +29,7 @@
 * 5 things to remember
 
 ** 1. Jesus commands intentionally
-                                                                                                                     
+
    Firstly, Jesus looks at him. He speaks to his man based on who he is. Jesus does not give this man a one-size-fits-all answer to his question. We know self-appointed counsellors who give advice without even really listening or understanding the situation. Jesus doesn't do that. He gives an answer that is unique to him, and to us.
     
    Why does that matter? If we feel like Jesus throws out commands at random, we may feel like he has not really thought about us and that he does not realise how hard it is to do what he is asking us to. But if we know Jesus considers as individuals, knowing our unique experiences and struggles, then we can be confident that what he calls us to do will be meaning full to us. Even if it seems difficult, we can be sure that it just the thing we need.
@@ -34,7 +37,7 @@
 ** 2. He does it out of love
 
    #+begin_quote
-   And Jesus, looking at him, loved him, 
+   "And Jesus, looking at him, loved him"
    #+end_quote
 
    Secondly, the commands Jesus gives, he gives in love. When he calls us to give up things we like, or things we were not expecting to have to, it may not feel that way, but Jesus is willing to tell us to do hard things in love. 
@@ -42,7 +45,7 @@
 ** 3. He wants us to gain
 
    #+begin_quote
-   "You lack one thing"
+   "You lack one thing..."
    #+end_quote
     
    Thirdly, when called to lose we see things differently than Jesus.  We often focus on what we have and are afraid of losing, but Jesus is looking what we lack and what we have to gain. He does not say to the man that there is one thing he has and needs to lose, but that there is one thing he lacks that he needs to gain. Jesus is focused on our gain, not our loss.
@@ -53,14 +56,14 @@
 ** 4. He wants better for us than what we have
 
    #+begin_quote
-   treasure in heaven;
+   ...go, sell all that you have and give to the poor, and you will have treasure in heaven...
    #+end_quote
 
    Jesus tells him to let go of what is stealing from him so that he can be rich in what matters. He does not want us to lose out. He wants us to have something /better/, "treasure in heaven". Too often we can't see past the appeal of earthly treasure so we settle. Jesus does not want this man to settle for less when knows he could have a better treasure in heaven. Even the best and the most valuable things we will eventually fade, lose their appeal, and drop in value. But Jesus offers us a to trade earthly treasure for treasure in heaven, that can't be damaged, can't be spoiled and will never lose value.
 
 ** 5. The thing we want to lose the least may be the thing we need to give up the most.
    #+begin_quote
-   Disheartened by the saying, he went away sorrowful, for he had great possessions.
+   ... Disheartened by the saying, he went away sorrowful, for he had great possessions.
    #+end_quote
 
    This was not how this man thought the conversation would go. Jesus tells him what he needs to do and his heart sinks. He is brought to a moment of crisis and the tragic end shows that he loved his possessions so much that he would not give them up even if it cost him eternal life.

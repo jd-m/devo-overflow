@@ -122,6 +122,7 @@ information."
      (if description (format
 		      "<meta property=\"og:description\" content=\"%s\"/>"
 		      description) "")
+     
 
      (if snippet (format
 		  "<meta property=\"snippet\" content=\"%s\"/>"
@@ -130,7 +131,9 @@ information."
      "<link rel=\"stylesheet\" href=\"/css/site-minimal.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Arvo\">\n"
+     "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Josefin Sans\">\n"
      "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/>"
+     "</head>\n"
 
      "<div class=\"col-12\">"
      
@@ -200,6 +203,7 @@ holding export options."
        (post-class (plist-get info :post-class))
        (title (car (plist-get info :title)))
        (date (plist-get info :date))
+       (post-type (plist-get info :post-type))
        (post-image (plist-get info :post-image))
        )
     
@@ -214,8 +218,7 @@ holding export options."
      (if devo-title-headline (concat "<h1 " (if devo-title-headline-class (format "class=\"%s\"" devo-title-headline-class )) ">" title "</h1>\n") "")
      
      (if date
-	 (format "<div class=\"article-date\">%s</div>\n\n"
-		 (format "%s" (plist-get info :date))) "")
+	 (format "<div class=\"article-date\">%s  &nbsp &#9679 &nbsp  %s</div>\n\n" date post-type) "")
      
      "</div>"
 
