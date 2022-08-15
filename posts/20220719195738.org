@@ -72,12 +72,17 @@ And Jesus, looking at him, loved him, and said to him, “You lack one thing: go
     
    The principle is simple: the more we love something the more it hurts to lose it. But if we love something more than God, then the thing which hurts the most to lose is the thing we need to lose the most. So we should not be surprised if the thing we are most afraid of losing is the very thing Jesus calls us to put out of our lives.
 
-
-
-#+attr_html: :class share-btns
-Share:  [[https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/20220719195738.org][Facebook]]
+#+begin_src emacs-lisp :results html :exports results
+(let((file-name (file-name-base (buffer-file-name))))
+(format "
+<span>Share to: </span>
+<a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
+<a class=\"share-btn\" href=\"https://wa.me/?text=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
+" file-name file-name))
+#+end_src
 
 -----
 
 Photo [[https://unsplash.com/@tompumford?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText][Tom Pumford]] on [[https://unsplash.com/s/photos/disappointed-rich-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText ][Unsplash]]
+
 

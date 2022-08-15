@@ -244,3 +244,23 @@ is the property list for the given project.  PUB-DIR is the
 publishing directory.
 Return output file name."
   (org-publish-org-to 'devo-html filename ".html" plist pub-dir))
+
+
+
+
+
+(defun devo-insert-share-links ()
+  ""
+  (interactive)
+  (insert "#+begin_src emacs-lisp :results html :exports results
+(let((file-name (file-name-base (buffer-file-name))))
+(format \"
+<span>Share to: </span>
+<a class=\\\"share-btn\\\" href=\\\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\\\">Facebook</a>
+<a class=\\\"share-btn\\\" href=\\\"https://wa.me/?text=jd-m.github.io/posts/%s.html\\\" data-action=\\\"share/whatsapp/share\\\"  target=\\\"_blank\\\" title=\\\"Share on whatsapp\\\">WhatsApp</a>
+\" file-name file-name))
+#+end_src"
+))
+					;
+
+

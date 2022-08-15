@@ -6,7 +6,7 @@
 #+POST_CLASS: article
 #+DEVO_POST_TAGS: devotional
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
-#+DESCRIPTION: Relying on wealth for security - the point of view of a 'have' and 'have not'
+#+DESCRIPTION: Relying on wealth - the perspective of a 'have' and 'have not'
 #+SNIPPET: On the surface this verse seems to say what a lot of people would see as a basic fact: being rich makes you secure because it means whatever you need you can get it. But is that all scripture is really saying?
 
 #+begin_quote
@@ -38,10 +38,16 @@ the poverty of the poor is their ruin.
 * Real Refuge
   If we base our security in what we have, or what we can do we will eventually be let down. But Jesus doesn't fail us. And though he is hidden from our sight now, He is more of a real refuge than anything we can see with our eyes. We can see our bank account, we can see people, and when things get tough it may seem easier to trust in them. But may we take God at His word when he says that His name is a strong tower (Proverbs 18:10) and none of those who take refuge in him will be put to shame (Psalm 34:22). 
 
+#+begin_src emacs-lisp :results html :exports results
+(let((file-name (file-name-base (buffer-file-name))))
+(format "
+<span>Share to: </span>
+<a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
+<a class=\"share-btn\" href=\"https://wa.me/?text=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
+" file-name file-name))
+#+end_src
 
+-----
 
-#+begin_export html
-<hr>
-<span>Photo by </span><a href="https://unsplash.com/@danny_lincoln?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Lincoln</a><span> on </span><a 
-href="https://unsplash.com/s/photos/ruin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-#+end_export  
+Photo by [[https://unsplash.com/@danny_lincoln?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"][Daniel Lincoln]] on [[https://unsplash.com/s/photos/ruin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText][Unsplash]]
+  
