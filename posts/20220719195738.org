@@ -77,10 +77,7 @@ And Jesus, looking at him, loved him, and said to him, “You lack one thing: go
    
 
 
-
-
 -----
-#+begin_export html
-Photo by <a href="https://unsplash.com/@tompumford?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Pumford</a> on <a href="https://unsplash.com/s/photos/disappointed-rich-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-#+end_export
+
+Photo [[https://unsplash.com/@tompumford?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText][Tom Pumford]] on [[https://unsplash.com/s/photos/disappointed-rich-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText ][Unsplash]]
+

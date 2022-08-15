@@ -210,8 +210,7 @@ holding export options."
     (concat
      (devo-html-header info)
 
-
-     (format "<div class=\"content %s\">" (if post-class (format " %s " post-class) ""))
+     (format "<div class=\"clear content %s\">" (if post-class (format " %s " post-class) ""))
 
      "<div class=\"col-6 indent-3 center\">"
      

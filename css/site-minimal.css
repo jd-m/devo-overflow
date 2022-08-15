@@ -30,7 +30,7 @@
 	clear: both;
     }
 
-    .content::after {
+    .clear::after {
         content: "";
         clear: both;
         display: table;
@@ -175,7 +175,6 @@
 
 
 
-
     /* Card-1 */
     
     .card-1 {
@@ -229,13 +228,16 @@
     
     /* Article */
 
+    .content {
+	margin: 0px 0px 64px 0px;
+    }
+
     .heading {
 	font-size: 32px;
         border-bottom: 1px solid darkcyan;
     }
 
     .article h1 {
-        display: inline-block;
         font-size: 48px;
         text-align: center;
         margin: 64px 0px 32px;
@@ -253,6 +255,9 @@
         object-fit: cover;
         margin: 0px 0px 32px;
         padding: 0px 0px;
+    }
+    .article hr {
+	margin: 32px 0px;
     }
 
     blockquote {
