@@ -229,12 +229,15 @@
     /* Article */
 
     .content {
-	margin: 0px 0px 64px 0px;
+	margin: 0px 0px 16px 0px;
     }
 
     .heading {
 	font-size: 32px;
         border-bottom: 1px solid darkcyan;
+    }
+    .article p {
+	margin: 0 0 1em 0;
     }
 
     .article h1 {
@@ -256,8 +259,9 @@
         margin: 0px 0px 32px;
         padding: 0px 0px;
     }
+    
     .article hr {
-	margin: 32px 0px;
+	margin: 8px 0px 8px;
     }
 
     blockquote {
@@ -267,6 +271,15 @@
 	font-size: 20px;
 	margin: 32px 0px;
 	padding: 0px 16px;
+    }
+
+
+   
+
+    a.share-btns {
+
+	margin: 0px 4px 0px 0px;
+	text-decoration: underline;
     }
     
     @media only screen and (min-width: 768px) {
@@ -293,8 +306,8 @@
         }
 
 	p {
-	font-size: 20px;
-    }
+	    font-size: 20px;
+	}
 
 
         /* Header */
