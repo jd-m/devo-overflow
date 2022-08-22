@@ -252,6 +252,10 @@
 	margin: 0 0 1em 0;
     }
 
+    .article .indent-3 {
+	padding: 0px 24px;
+    }
+
     .article h1 {
         font-size: 48px;
         text-align: center;
@@ -266,7 +270,7 @@
 
     .article img {
         width: 100%;
-        height: 600px;
+        height: 450px;
         object-fit: cover;
         margin: 0px 0px 32px;
         padding: 0px 0px;
@@ -347,6 +351,11 @@
 	
 	.card-1 img {
 	    height: 450px;
+	}
+
+
+	.article img {
+	    height: 600px;
 	}
     }
     
