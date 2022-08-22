@@ -85,7 +85,7 @@
 
     .site-top {
         text-align: center;
-        margin: 0px 0px 0px;
+        margin: 0px auto 0px;
         width: 85%;
     }
 
@@ -157,7 +157,7 @@
     /* Navbar*/
 
     .navbar {
-        float: right;
+        
     }
 
     .navbar a {
@@ -204,14 +204,7 @@
         padding: 4px 0px;
     }
 
-    .card-1 img {
-	
-	    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin: 0px 0px 32px;
-    padding: 0px 0px;
-
+    .card-1 .card-image {
     }
 
     .card-1 .card-text {
@@ -327,9 +320,6 @@
             font-family: Arvo;
             font-size: 24px;
         }
-
-	.card-1 img {
-	    display: none;
-	}
+        
     }
     

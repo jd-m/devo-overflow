@@ -27,23 +27,17 @@ the poverty of the poor is their ruin.
   The point is that if we find security in things, we will feel secure when we have them but defenceless when we don't. There are a lot of things we can run to for security: money, possessions, achievement, approval, appearance. The list goes on. But if we rely on these things, ultimately, they will let us down. Relying on these things is like being injured and leaning on a broken crutch for support. They will break when we put our weight on them and will leave us even more hurt than we already were.
 
 * Trust Check
-  And I think this verse also gives us a way check what we are trusting in; if we rely on something, it lets us down and we are shaken more than we thought we would be that might be a sign that we were putting more confidence in it than we thought. And we can do this even as Christians. As believers we can root our confidence in (1) our /circumstance/ or (2) our /performance/ instead of in Jesus.
-
-** Circumstance
-   If I feel secure when life is good and things are going well, but when they aren't I'm shaken, then maybe what I thought was trust in God was actually confidence in my circumstance.
-
-** Performance
-   Or if I feel solid in my faith while I'm consistent in my spiritual disciplines but then I miss a day or two and think God's not happy with me anymore that might just mean I've been trusting in my own performance instead of in Christ. Should I read my bible and pray every day? Absolutely. But I don't trust in my consistency I trust in Jesus. I trust in Him because of his faithfulness and because on the cross he dealt with my sin once and for all.
+  And I think this verse also gives us a way check what we are trusting in; if we rely on something, it lets us down and we are shaken more than we thought we would be that might be a sign that we were putting more confidence in it than we thought. If I feel secure when life is good and things are going well, but when they aren't I'm shaken, then maybe what I was trusting in my circumstance more than God.
 
 * Real Refuge
-  If we base our security in what we have, or what we can do we will eventually be let down. But Jesus doesn't fail us. And though he is hidden from our sight now, He is more of a real refuge than anything we can see with our eyes. We can see our bank account, we can see people, and when things get tough it may seem easier to trust in them. But may we take God at His word when he says that His name is a strong tower (Proverbs 18:10) and none of those who take refuge in him will be put to shame (Psalm 34:22). 
+  If we base our security in what we have we will eventually be let down. But Jesus doesn't fail us. And though he is hidden from our sight now, He is more of a real refuge than anything we can see with our eyes. We can see our bank account, we can see people, and when things get tough it may seem easier to trust in them. But may we take God at His word when he says that His name is a strong tower (Proverbs 18:10) and none of those who take refuge in him will be put to shame (Psalm 34:22). 
 
 #+begin_src emacs-lisp :results html :exports results
 (let((file-name (file-name-base (buffer-file-name))))
 (format "
 <span>Share to: </span>
 <a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
-<a class=\"share-btn\" href=\"https://wa.me/?text=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
+<a class=\"share-btn\" href=\"https://wa.me/?url=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
 " file-name file-name))
 #+end_src
 

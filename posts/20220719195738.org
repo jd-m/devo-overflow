@@ -17,8 +17,6 @@ Mark 11:21-22
 And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. Disheartened by the saying, he went away sorrowful, for he had great possessions.
 #+end_quote
 
-
-
 * When Jesus calls us to lose
   No one enjoys giving up things they like. But there are times when the things we have keep us from having something more imporant. If I pay over a grand each month for my Tesla Model X, and that means I can't afford my rent or bills, obviously I've got my priorities wrong. I may like my model X but its not more important than having a place to live. Similarly there may be things in our lives which we give more focus than we should, and when that happens Jesus may call us to let it go, just as did to the rich young man ($ref).
 
@@ -77,7 +75,6 @@ And Jesus, looking at him, loved him, and said to him, “You lack one thing: go
 (format "
 <span>Share to: </span>
 <a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
-<a class=\"share-btn\" href=\"https://wa.me/?text=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
 " file-name file-name))
 #+end_src
 

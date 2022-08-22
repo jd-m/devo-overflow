@@ -1,9 +1,89 @@
 #+title: Teach Like A Christian
 #+OPTIONS: devo-title-headline:t  devo-title-headline-class:heading
 
-/Thought on living out the Christian faith as a teacher./
+
+* Vision
+/Thoughts on living out the Christian faith as a teacher./
+
+What is the mission of a Christian teacher?
+- Make Christ known in and out of lesson
+  - Acting faithfully
+    - fairness/consistency
+    - honesty
+    - work hard and do a good job
+    - be faithful to employers
+  - Speaking the truth
+  - Give testimony of how Jesus has changed my life personally
+    - Talk about your life. The way you do things will be different and will be opportunities to say how you live because of Jesus.
+  - Share the gospel.
+
+* Subjects
+  - Charancter :: Christian Character in Teaching
+  - Practice :: Christian Teaching in Practice
+  - Managing :: Work/life balance
+
+* Types
+  - short devotions on bible verse related to a subject
+  - 
+* Ideas
+** Do not worry about tomorrow
+** Don't discipline with scorpions
+** Misreacting
+** Eccelesiastes 12: Weighing and arranging with great care
+** Teaching the Truth
+** Consistency: why it is important and why it is so hard
+** The illusion of omnipotence
+** Teaching as Sons of the Most High: send the rain on the just and the unjust
+** Keeping in step with the Spirit
+** Entropy: tendency to chaos
+** Teaching for the students
+** Good relationships != people pleasing
+** Don't feel like a very good Christian (teacher)
+
+** Posts
+   * What does is mean to teach as a Christian?
+     - What is a teacher?
+       - A teacher is not someone who imparts information, but someone who helps another learn. There is a difference.
+     - What is a Christian?
+       - A Christian is someone who has acknowledged that they are a sinner hopelessly in need of saving, and who trusts in Jesus to save them, and now lives to make Him, and His message of eternal life through Him, known.
+     - So what is a Christian teacher?
+       - Display Christ in character - first thing people see - not faking it, but genuinely as God has changed us.
+       - Display Christ in life - the life we live outside of school has been impacted by Jesus - the things we do and focus on, and our reasons why - relationships we have.
+       - Share the gospel - this is the best news we should share it whenever we get opportunity - this is the core of our belief and our inderstanding of who we are and how we live - Apprehension: in our country it is ok to talk about faith, many people don't, but we should, in fact I think more people want to than we think.
+
+* Posts
+
+** Intro post: vision
+
+    - What is a Teacher?
+
+    - What is a Christian?
+
+    - How would a Christian teach?
+
+      - Teaching as unto the Lord
+
+        - The students are important and we do our best for them, but they are not the ones I am trying to please most. It is the Lord I am trying to please.
 
 
-#+attr_html: :class posts indent-2
-- [[file:posts/20220715192145.org][1: The Sell]]
+** Getting ready for the new year
 
+    - Expectations for students (and yourself!)
+
+      - Start as I mean to go on
+
+        - Start off on the right foot
+
+      - Routines
+
+      - Upfront investment - it is worth it in the long run
+
+        - Take a genuine interest - 
+
+      - The amount of time wasted because students get into bad habits is ridiculous. It really is.
+
+        - Be honest/humble about what you will be able to do
+
+          - Don't over-promise
+
+        - Build routine and get into good habits.

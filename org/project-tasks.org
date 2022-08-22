@@ -1,4 +1,0 @@
-#+TODO: todo | done
-
-
-- [ ] Add JS to redo index

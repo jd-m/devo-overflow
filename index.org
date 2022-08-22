@@ -26,7 +26,7 @@
           var html_string = "";          
 
           html_string =
-
+          "<img src=\"" + image + "\"/>" +
           "<a href=\"" + a_href + "\">\n" +
           "<div class=\"center card-2\">\n" +
           /*"<span class=\"post-type\">" + post_type + "</span>" +*/
@@ -56,7 +56,6 @@
 
   #+attr_html: :class indent-3
     - [[file:posts/20220719195738.org][One Thing You Lack]]
-    - [[file:posts/20220527172601.org][One Man's Strong City is Another Man's Ruin]]
 
   #+begin_export javascript
   $(".posts-2 a").each(function (i, obj) {
@@ -76,6 +75,7 @@
       html_string =
 
   "<div class=\"card-1\">\n" + 
+  "<img src=\"" + image + "\"/>" +
   "<a href=\"" + a_href + "\"><div class=\"card-title\">" + post_title + "</div></a>\n" + 
   "<div class=\"card-description\">" + description + "</div>\n" +
   "<div class=\"card-date\">" + date + " &nbsp &#9679 &nbsp " + post_type + "</div>\n" + 
@@ -95,4 +95,5 @@
   #+begin_comment
   - [[file:posts/20220719195738.org][/17 July 2022/ One Thing You Lack]]
   - [[file:posts/20220623212643.org][/23 Jun 2022/ Not as the World Gives]]
+    - [[file:posts/20220527172601.org][One Man's Strong City is Another Man's Ruin]]
   #+end_comment
