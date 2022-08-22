@@ -1,4 +1,5 @@
 #+title: Posts
+#+PAGE_CSS: site-minimal.css
 
 * COMMENT Latest
   :PROPERTIES:
@@ -55,7 +56,8 @@
   :END:
 
   #+attr_html: :class indent-3
-    - [[file:posts/20220719195738.org][One Thing You Lack]]
+  - [[file:posts/20220719195738.org][One Thing You Lack]]
+  - [[file:posts/20220527172601.org][One Man's Strong City is Another Man's Ruin]]
 
   #+begin_export javascript
   $(".posts-2 a").each(function (i, obj) {

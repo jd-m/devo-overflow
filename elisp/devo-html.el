@@ -35,15 +35,15 @@
 		   (:html-body-attr "HTML_BODY_ATTR" nil "" t)
 		   (:devo-title-headline "DEVO_TITLE_HEADLINE" "devo-title-headline" nil t)
 		   (:devo-title-headline-class "DEVO_TITLE_HEADLINE_CLASS" "devo-title-headline-class" nil space)
-		   (:post-class "POST_CLASS" "post-class" nil space)
-		   
-		   (:post-image "POST_IMAGE" "post-image" nil t)
-		   (:page-type "PAGE_TYPE" "page-type" nil t)
-		   (:post-type "POST_TYPE" "post-type" nil t)
+		   (:post-class "POST_CLASS" ":post-class" nil space)
+		   (:page-css "PAGE_CSS" ":page-css" nil t)
+		   (:post-image "POST_IMAGE" ":post-image" nil t)
+		   (:page-type "PAGE_TYPE" ":page-type" nil t)
+		   (:post-type "POST_TYPE" ":post-type" nil t)
 		   (:description "DESCRIPTION" ":description" nil space)
 		   (:snippet "SNIPPET" ":snippet" nil space)
-		   (:devo-post-tags "DEVO_POST_TAGS" "devo-post-tags" nil space)
-		   (:devo-share-links "DEVO_SHARE_LINKS" "devo-share-links" nil t)
+		   (:devo-post-tags "DEVO_POST_TAGS" ":devo-post-tags" nil space)
+		   (:devo-share-links "DEVO_SHARE_LINKS" ":devo-share-links" nil t)
 		   (:date "DATE" "date" nil t)
 		   )
   )
@@ -90,6 +90,7 @@ information."
 	(post-image (plist-get info :post-image))
 	(page-type (plist-get info :page-type))
 	(post-type (plist-get info :post-type))
+	(page-css (plist-get info :page-css))
 	(description (plist-get info :description))
 	(snippet (plist-get info :snippet))
 	(devo-post-tags (plist-get info :devo-post-tags)))
@@ -122,13 +123,13 @@ information."
      (if description (format
 		      "<meta property=\"og:description\" content=\"%s\"/>"
 		      description) "")
-     
 
      (if snippet (format
 		  "<meta property=\"snippet\" content=\"%s\"/>"
 		  snippet) "")
+
+     (format "<link rel=\"stylesheet\" href=\"/css/%s\"/>\n" (if page-css "site-single-column.css" "site-minimal.css"))
      
-     "<link rel=\"stylesheet\" href=\"/css/site-minimal.css\"/>\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Arvo\">\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Josefin Sans\">\n"
