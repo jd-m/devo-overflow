@@ -75,6 +75,9 @@ And Jesus, looking at him, loved him, and said to him, “You lack one thing: go
 (format "
 <span>Share to: </span>
 <a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
+
+<a class=\"share-btn\" href=\"https://twitter.com/intent/tweet?url=%s\">Twitter</a>
+
 " file-name file-name))
 #+end_src
 

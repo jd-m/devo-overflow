@@ -128,7 +128,7 @@ information."
 		  "<meta property=\"snippet\" content=\"%s\"/>"
 		  snippet) "")
 
-     (format "<link rel=\"stylesheet\" href=\"/css/%s\"/>\n" (if page-css "site-single-column.css" "site-minimal.css"))
+     (format "<link rel=\"stylesheet\" href=\"/css/%s\"/>\n" (if page-css page-css "site-minimal.css"))
      
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Raleway\">\n"
      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Arvo\">\n"
@@ -167,11 +167,11 @@ information."
 
      "<div class=\"drop-navbar hide\">"
      "<ul>"
-     "<hr>"
+
      "<a href=\"/index.html\"><li>Posts</li></a>"
-     "<hr>"
+
      "<a href=\"/about.html\"><li>About</li></a>"
-     "<hr>"
+    
      "</ul>"
      "</div>"
      
@@ -248,8 +248,6 @@ Return output file name."
 
 
 
-
-
 (defun devo-insert-share-links ()
   ""
   (interactive)
@@ -258,7 +256,9 @@ Return output file name."
 (format \"
 <span>Share to: </span>
 <a class=\\\"share-btn\\\" href=\\\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\\\">Facebook</a>
-<a class=\\\"share-btn\\\" href=\\\"https://wa.me/?text=jd-m.github.io/posts/%s.html\\\" data-action=\\\"share/whatsapp/share\\\"  target=\\\"_blank\\\" title=\\\"Share on whatsapp\\\">WhatsApp</a>
+
+<a class=\\\"share-btn\\\" href=\\\"https://twitter.com/intent/tweet?url=%s\\\">Twitter</a>
+
 \" file-name file-name))
 #+end_src"
 ))

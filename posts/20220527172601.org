@@ -1,11 +1,14 @@
 #+title: One Man's City is Another Man's Ruin
 #+date: 23 July 2022
-#+POST_IMAGE: ruin-7.jpg
-#+PAGE_TYPE: article
-#+POST_TYPE: Devotional
+
 #+POST_CLASS: article
+
+#+PAGE_TYPE: article
 #+DEVO_POST_TAGS: devotional
+#+POST_IMAGE: ruin-7.jpg
 #+OPTIONS: devo-title-headline:t  devo-share-links:t
+
+#+POST_TYPE: Devotional
 #+DESCRIPTION: Relying on wealth - the perspective of a 'have' and 'have not'
 #+SNIPPET: On the surface this verse seems to say what a lot of people would see as a basic fact: being rich makes you secure because it means whatever you need you can get it. But is that all scripture is really saying?
 
@@ -37,7 +40,9 @@ the poverty of the poor is their ruin.
 (format "
 <span>Share to: </span>
 <a class=\"share-btn\" href=\"https://www.facebook.com/sharer/sharer.php?u=jd-m.github.io/posts/%s.html\">Facebook</a>
-<a class=\"share-btn\" href=\"https://wa.me/?url=jd-m.github.io/posts/%s.html\" data-action=\"share/whatsapp/share\"  target=\"_blank\" title=\"Share on whatsapp\">WhatsApp</a>
+
+<a class=\"share-btn\" href=\"https://twitter.com/intent/tweet?url=%s\">Twitter</a>
+
 " file-name file-name))
 #+end_src
 
