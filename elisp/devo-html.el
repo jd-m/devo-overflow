@@ -99,7 +99,7 @@ information."
      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"    
      "<script src=\"/js/jquery-3.6.0.min.js\"></script>\n"
 					;site-name
-     "<meta property=\"og:site_name\" content=\"Devo Overflow\">"
+     "<meta property=\"og:site_name\" content=\"Precious not Worthless\">"
      
 					;title
      (if title (format "<meta property=\"og:title\" content=\"%s\"/>\n" title) "")
@@ -142,7 +142,7 @@ information."
      
      "<div class=\"site-top\">"
      "<a href=\"/index.html\">"
-     "<div class=\"site-name\">Devo Overflow</div>"
+     "<div class=\"site-name\">Precious not Worthless</div>"
      "</a>"
      "<div class=\"site-description\">Slightly longer site descrtiption</div>"
      "</div>"
