@@ -11,7 +11,9 @@
 <div class="col-12"><div class="header"><div class="site-top"><a href="/index.html"><div class="site-name">Precious not Worthless</div></a><div class="site-description">Slightly longer site descrtiption</div></div><div class="navbar disappear"><a href="/index.html">Posts</a><a href="/about.html">About</a></div><div class="dropdown-icon appear" ><hr style="width: 30px"><hr style="width: 30px"><hr style="width: 30px"></div><script>$(".dropdown-icon").click(function(){
           $(".drop-navbar").toggleClass("hide");
       })</script></div><div class="drop-navbar hide"><ul><a href="/index.html"><li>Posts</li></a><a href="/about.html"><li>About</li></a></ul></div></div><div class="clear content "><div class="col-6 indent-3 center"></div><div class="col-6 indent-3 center"><div>
-<div class="posts-2"><h2 id="recent-posts" class="heading hide">Recent Posts</h2><ul class="indent-3"><li><a href="posts/20220719195738.html">One Thing You Lack</a></li>
+
+<div class="posts-2"><h2 id="recent-posts" class="heading hide">Posts</h2><ul class="indent-3"><li><a href="posts/20220719195738.html">One Thing You Lack</a></li>
+
 <li><a href="posts/20220527172601.html">One Man's Strong City is Another Man's Ruin</a></li>
 </ul>
 
@@ -32,7 +34,7 @@
       html_string =
 
           "<div class=\"card-1\">\n" + 
-          "<img src=\"" + image + "\"/>" +
+          "<a href=\"" + a_href + "\"><img src=\"" + image + "\"/><\a>" +
           "<div class=\"card-info\">" +
       "<a href=\"" + a_href + "\"><div class=\"card-title\">" + post_title + "</div></a>\n" + 
           "<div class=\"card-description\">" + description + "</div>\n" +

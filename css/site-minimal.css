@@ -243,13 +243,14 @@
 
     .heading {
 	font-size: 28px;
-	color: darkcyan;
+	color: black;
 	text-align: left;
 	padding: 32px 0px 0px;
 	/*text-decoration: underline;
 	text-underline-offset: 4px;
 	text-decoration-color: black;*/
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid darkcyan;
+
 
     }
     .article p {
@@ -375,10 +376,10 @@
 
 
 	.heading {
-	    font-size: 40px;
-	    color: darkcyan;
+	    font-size: 28px;
 	    text-align: center;
 	    padding: 32px 0px 32px;
+
 	}
 
 
