@@ -136,46 +136,51 @@ information."
      "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/>"
      "</head>\n"
 
-     "<div class=\"col-12\">"
+     "<div class=\"col-6 center\">"
      
-     "<div class=\"header\">"
+     "<div class=\"header\">\n"
      
-     "<div class=\"site-top\">"
-     "<a href=\"/index.html\">"
-     "<div class=\"site-name\">Precious not Worthless</div>"
-     "</a>"
-     "<div class=\"site-description\">Slightly longer site descrtiption</div>"
+     "<div class=\"site-top\">\n"
+     "<a href=\"/index.html\">\n"
+     "<div class=\"site-name\">Precious not Worthless</div>\n"
+     "</a>\n"
+     "<div class=\"site-description\">Slightly longer site descrtiption</div>\n"
+     "<div class=\"triple-line\" style=\"color: grey;clear:both; float: left;\">"
+     "<hr style=\"width: 200px; margin: 0px 0px 2px;\">"
+     "<hr style=\"width: 100px; margin: 2px 0px;\">"
+     "<hr style=\"width: 25px; margin: 2px 0px;\">"
      "</div>"
+     "</div>\n"
      
-     "<div class=\"navbar disappear\">"
-     "<a href=\"/index.html\">Posts</a>"
-     "<a href=\"/about.html\">About</a>"
-     "</div>"
+     "<div class=\"navbar disappear\">\n"
+     "<a href=\"/index.html\">Posts</a>\n"
+     "<a href=\"/about.html\">About</a>\n"
+     "</div>\n"
 
-     "<div class=\"dropdown-icon appear\" >"
-     "<hr style=\"width: 30px\">"
-     "<hr style=\"width: 30px\">"
-     "<hr style=\"width: 30px\">"
-     "</div>"
+     "<div class=\"dropdown-icon appear\" >\n"
+     "<hr style=\"width: 30px\">\n"
+     "<hr style=\"width: 30px\">\n"
+     "<hr style=\"width: 30px\">\n"
+     "</div>\n"
 
-     "<script>"
+     "<script>\n"
      "$(\".dropdown-icon\").click(function(){
           $(\".drop-navbar\").toggleClass(\"hide\");
-      })"
-     "</script>"
-     "</div>"
+      })\n"
+     "</script>\n"
+     "</div>\n"
 
-     "<div class=\"drop-navbar hide\">"
-     "<ul>"
+     "<div class=\"drop-navbar hide\">\n"
+     "<ul>\n"
 
-     "<a href=\"/index.html\"><li>Posts</li></a>"
+     "<a href=\"/index.html\"><li>Posts</li></a>\n"
 
-     "<a href=\"/about.html\"><li>About</li></a>"
+     "<a href=\"/about.html\"><li>About</li></a>\n"
     
-     "</ul>"
-     "</div>"
+     "</ul>\n"
+     "</div>\n"
      
-     "</div>"
+     "</div>\n"
 
      )))
 
