@@ -51,7 +51,7 @@
 
 * Blog
   :PROPERTIES:
-  :attr_html: :id recent-posts :class heading indent-2
+  :attr_html: :id recent-posts :class heading indent-2 hide
   :html_container: div
   :html_container_class: posts-2
   :END:
