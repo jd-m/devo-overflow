@@ -153,18 +153,20 @@ information."
      "</div>\n"
      
      "<div class=\"navbar disappear\">\n"
+     "<a href=\"/#\">Latest</a>\n"
      "<a href=\"/index.html\">Posts</a>\n"
+     "<a href=\"/#\">Tags</a>\n"
      "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
 
      "<div class=\"dropdown-icon appear\" >\n"
-     "<hr style=\"width: 30px\">\n"
-     "<hr style=\"width: 30px\">\n"
-     "<hr style=\"width: 30px\">\n"
+     "<hr style=\"\">\n"
+     "<hr style=\"\">\n"
+     "<hr style=\"\">\n"
      "</div>\n"
 
      "<script>\n"
-     "$(\".dropdown-icon\").click(function(){
+about     "$(\".dropdown-icon\").click(function(){
           $(\".drop-navbar\").toggleClass(\"hide\");
       })\n"
      "</script>\n"
@@ -173,8 +175,12 @@ information."
      "<div class=\"drop-navbar hide\">\n"
      "<ul>\n"
 
+     "<a href=\"/#\"><li>Latest</li></a>\n"
+     
      "<a href=\"/index.html\"><li>Posts</li></a>\n"
 
+     "<a href=\"/#\"><li>Tags</li></a>\n"
+     
      "<a href=\"/about.html\"><li>About</li></a>\n"
     
      "</ul>\n"

@@ -51,7 +51,7 @@
 
 * Blog
   :PROPERTIES:
-  :attr_html: :id recent-posts :class heading indent-2 hide
+  :attr_html: :id recent-posts :class heading indent-2
   :html_container: div
   :html_container_class: posts-2
   :END:
@@ -79,7 +79,7 @@
       html_string =
 
           "<div class=\"card-1\">\n" + 
-          "<a href=\"" + a_href + "\"><img src=\"" + image + "\"/><\a>" +
+          "<a href=\"" + a_href + "\"><img class=\"hide\" src=\"" + image + "\"/><\a>" +
           "<div class=\"card-info\">" +
       "<a href=\"" + a_href + "\"><div class=\"card-title\">" + post_title + "</div></a>\n" + 
           "<div class=\"card-description\">" + description + "</div>\n" +
@@ -88,7 +88,8 @@
           "<a href=\"" + a_href + "\">" + 
           "<div class=\"card-read-more\">continue reading...</div></a>" +
           "</div>" + 
-  "</div>";
+          "<div class=\"card-seperator\">&#8226 &#8226 &#8226</div>" + 
+          "</div>";
 
       $("#recent-posts").after(html_string);
   });
