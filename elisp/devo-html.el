@@ -142,7 +142,7 @@ information."
      
      "<div class=\"site-top\">\n"
      "<a href=\"/index.html\">\n"
-     "<div class=\"site-name\">Precious not Worthless</div>\n"
+     "<div class=\"site-name\">Thoughts + Devotions</div>\n"
      "</a>\n"
      "<div class=\"site-description\">Slightly longer site descrtiption</div>\n"
      "<div class=\"triple-line\" style=\"color: grey;clear:both; float: left;\">"
@@ -166,7 +166,7 @@ information."
      "</div>\n"
 
      "<script>\n"
-about     "$(\".dropdown-icon\").click(function(){
+     "$(\".dropdown-icon\").click(function(){
           $(\".drop-navbar\").toggleClass(\"hide\");
       })\n"
      "</script>\n"

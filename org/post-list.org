@@ -1,7 +1,5 @@
 #+TODO: idea notes draft revise proof | done 
-
-
-* Weekly
+* Devotions
 ** proof One thing You Lack
 ** idea John 5:39 Don't miss Jesus
    - You search the scriptures because you think that in them you have eternal life.
@@ -21,7 +19,9 @@
        - That probably sounds unintelligible to non-believers.
        - That may sound awkward to believers.
        - But experience suggests we are most self-forgetful, and are enjoying our lives the most when we do work for Jesus.
-
+** Christian Love
+   - If you love those who love you, what good is that to you.
+   - [[file:~/Dropbox/Archive/20220919212918.org][Christian Love]]
 * Teach Like A Christian
 *** idea Misreacting
 *** idea Don't discipline with scorpions
