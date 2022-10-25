@@ -142,7 +142,7 @@ information."
      
      "<div class=\"site-top\">\n"
      "<a href=\"/index.html\">\n"
-     "<div class=\"site-name\">Thoughts + Devotions</div>\n"
+     "<div class=\"site-name\">Thoughts of Devotion</div>\n"
      "</a>\n"
      "<div class=\"site-description\">Slightly longer site descrtiption</div>\n"
      "<div class=\"triple-line\" style=\"color: grey;clear:both; float: left;\">"
