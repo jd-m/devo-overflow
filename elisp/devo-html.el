@@ -153,9 +153,9 @@ information."
      "</div>\n"
      
      "<div class=\"navbar disappear\">\n"
-     "<a href=\"/#\">Latest</a>\n"
-     "<a href=\"/index.html\">Posts</a>\n"
-     "<a href=\"/#\">Tags</a>\n"
+     ;"<a href=\"/#\">Latest</a>\n"
+     "<a href=\"/index.html\">Blog</a>\n"
+     ;"<a href=\"/#\">Tags</a>\n"
      "<a href=\"/about.html\">About</a>\n"
      "</div>\n"
 
